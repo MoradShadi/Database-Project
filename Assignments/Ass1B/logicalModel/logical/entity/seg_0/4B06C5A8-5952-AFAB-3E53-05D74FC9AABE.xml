@@ -1,0 +1,47 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="4B06C5A8-5952-AFAB-3E53-05D74FC9AABE" name="Centre">
+<createdBy>mabo0003</createdBy>
+<createdTime>2021-09-09 13:15:53 UTC</createdTime>
+<ownerDesignName>logicalModel</ownerDesignName>
+<engineerTo>
+<item key="E075BB35-F1EF-BBEC-8ED6-651FC049A85A" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="centre_id" id="C3BE31BB-B5E6-9B14-C8CC-C903F6B13FDD">
+<createdBy>mabo0003</createdBy>
+<createdTime>2021-09-09 13:16:44 UTC</createdTime>
+<commentInRDBMS><![CDATA[centre number]]></commentInRDBMS>
+<ownerDesignName>logicalModel</ownerDesignName>
+<engineerTo>
+<item key="E075BB35-F1EF-BBEC-8ED6-651FC049A85A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="344E1F94-8683-9B0C-543F-AB72087AEC29" name="Centre PK">
+<createdBy>mabo0003</createdBy>
+<createdTime>2021-09-09 13:17:34 UTC</createdTime>
+<ownerDesignName>logicalModel</ownerDesignName>
+<engineerTo>
+<item key="E075BB35-F1EF-BBEC-8ED6-651FC049A85A" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>C3BE31BB-B5E6-9B14-C8CC-C903F6B13FDD</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
