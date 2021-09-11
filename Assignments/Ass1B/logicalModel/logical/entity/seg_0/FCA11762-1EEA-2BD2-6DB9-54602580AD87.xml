@@ -1,0 +1,120 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="FCA11762-1EEA-2BD2-6DB9-54602580AD87" name="Staff">
+<createdBy>mabo0003</createdBy>
+<createdTime>2021-09-11 10:35:00 UTC</createdTime>
+<ownerDesignName>logicalModel</ownerDesignName>
+<engineerTo>
+<item key="E075BB35-F1EF-BBEC-8ED6-651FC049A85A" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="staff_id" id="FDF840F7-B201-5092-D08D-CD90114F390B">
+<createdBy>mabo0003</createdBy>
+<createdTime>2021-09-11 10:36:45 UTC</createdTime>
+<commentInRDBMS><![CDATA[ID]]></commentInRDBMS>
+<ownerDesignName>logicalModel</ownerDesignName>
+<engineerTo>
+<item key="E075BB35-F1EF-BBEC-8ED6-651FC049A85A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="staff_fname" id="AD335F09-3884-1713-DEDF-F13EF2161687">
+<createdBy>mabo0003</createdBy>
+<createdTime>2021-09-11 10:37:09 UTC</createdTime>
+<commentInRDBMS><![CDATA[first name]]></commentInRDBMS>
+<ownerDesignName>logicalModel</ownerDesignName>
+<engineerTo>
+<item key="E075BB35-F1EF-BBEC-8ED6-651FC049A85A" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="staff_lname" id="82D4E1D0-176F-018C-9257-F720743B4541">
+<createdBy>mabo0003</createdBy>
+<createdTime>2021-09-11 10:37:34 UTC</createdTime>
+<commentInRDBMS><![CDATA[last name]]></commentInRDBMS>
+<ownerDesignName>logicalModel</ownerDesignName>
+<engineerTo>
+<item key="E075BB35-F1EF-BBEC-8ED6-651FC049A85A" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="staff_phone" id="8009A87F-0DA8-E75E-551C-F3F674119D89">
+<createdBy>mabo0003</createdBy>
+<createdTime>2021-09-11 10:38:10 UTC</createdTime>
+<commentInRDBMS><![CDATA[staff phone number]]></commentInRDBMS>
+<ownerDesignName>logicalModel</ownerDesignName>
+<engineerTo>
+<item key="E075BB35-F1EF-BBEC-8ED6-651FC049A85A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>8</dataTypeSize>
+<ownDataTypeParameters>8,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="staff_startdate" id="E4F21C45-90DA-4373-07ED-98A7488F5E4E">
+<createdBy>mabo0003</createdBy>
+<createdTime>2021-09-11 10:39:39 UTC</createdTime>
+<commentInRDBMS><![CDATA[start date]]></commentInRDBMS>
+<ownerDesignName>logicalModel</ownerDesignName>
+<engineerTo>
+<item key="E075BB35-F1EF-BBEC-8ED6-651FC049A85A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="role_id" id="40BAFBBD-72CF-5BE3-BA4B-19698B8F4760">
+<createdBy>mabo0003</createdBy>
+<createdTime>2021-09-11 11:28:45 UTC</createdTime>
+<commentInRDBMS><![CDATA[role ID]]></commentInRDBMS>
+<generatorID>CDD511A3-D60D-9FD7-BD5F-C64E26593B38</generatorID>
+<ownerDesignName>logicalModel</ownerDesignName>
+<engineerTo>
+<item key="E075BB35-F1EF-BBEC-8ED6-651FC049A85A" value="true"/>
+</engineerTo>
+<referedAttribute>991240A4-C019-5874-DBD9-8A90ED9F02ED</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="601CD02E-A44B-6488-F9DF-6DC53624DF63" name="Staff PK">
+<createdBy>mabo0003</createdBy>
+<createdTime>2021-09-11 10:36:51 UTC</createdTime>
+<ownerDesignName>logicalModel</ownerDesignName>
+<engineerTo>
+<item key="E075BB35-F1EF-BBEC-8ED6-651FC049A85A" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>FDF840F7-B201-5092-D08D-CD90114F390B</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

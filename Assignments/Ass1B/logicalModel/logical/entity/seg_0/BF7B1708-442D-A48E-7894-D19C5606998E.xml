@@ -1,0 +1,117 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="BF7B1708-442D-A48E-7894-D19C5606998E" name="Member">
+<createdBy>mabo0003</createdBy>
+<createdTime>2021-09-11 10:34:53 UTC</createdTime>
+<ownerDesignName>logicalModel</ownerDesignName>
+<engineerTo>
+<item key="E075BB35-F1EF-BBEC-8ED6-651FC049A85A" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="member_id" id="3C408569-22E2-C6C2-3CDD-F06376BB4089">
+<createdBy>mabo0003</createdBy>
+<createdTime>2021-09-11 10:55:14 UTC</createdTime>
+<commentInRDBMS><![CDATA[member ID]]></commentInRDBMS>
+<ownerDesignName>logicalModel</ownerDesignName>
+<engineerTo>
+<item key="E075BB35-F1EF-BBEC-8ED6-651FC049A85A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="member_fname" id="17B9E432-1E33-AB32-90ED-EA99CBC59396">
+<createdBy>mabo0003</createdBy>
+<createdTime>2021-09-11 10:55:38 UTC</createdTime>
+<commentInRDBMS><![CDATA[first name]]></commentInRDBMS>
+<ownerDesignName>logicalModel</ownerDesignName>
+<engineerTo>
+<item key="E075BB35-F1EF-BBEC-8ED6-651FC049A85A" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="member_lname" id="806AA571-5547-0970-7CB2-383E940BD724">
+<createdBy>mabo0003</createdBy>
+<createdTime>2021-09-11 10:56:08 UTC</createdTime>
+<ownerDesignName>logicalModel</ownerDesignName>
+<engineerTo>
+<item key="E075BB35-F1EF-BBEC-8ED6-651FC049A85A" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="member_address" id="CE8589D1-2DC5-7170-FB01-5AEBF0DA8C74">
+<createdBy>mabo0003</createdBy>
+<createdTime>2021-09-11 10:56:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[address]]></commentInRDBMS>
+<ownerDesignName>logicalModel</ownerDesignName>
+<engineerTo>
+<item key="E075BB35-F1EF-BBEC-8ED6-651FC049A85A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="member_phone" id="BCE5F2DF-0A22-3B81-A5FD-A1E44AA9F051">
+<createdBy>mabo0003</createdBy>
+<createdTime>2021-09-11 10:56:49 UTC</createdTime>
+<commentInRDBMS><![CDATA[phone number]]></commentInRDBMS>
+<ownerDesignName>logicalModel</ownerDesignName>
+<engineerTo>
+<item key="E075BB35-F1EF-BBEC-8ED6-651FC049A85A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>8</dataTypeSize>
+<ownDataTypeParameters>8,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="member_join_date" id="FF9C117E-DBD9-6506-ECB0-E015A82C1DAE">
+<createdBy>mabo0003</createdBy>
+<createdTime>2021-09-11 10:57:28 UTC</createdTime>
+<commentInRDBMS><![CDATA[join date]]></commentInRDBMS>
+<ownerDesignName>logicalModel</ownerDesignName>
+<engineerTo>
+<item key="E075BB35-F1EF-BBEC-8ED6-651FC049A85A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="158DAF44-C029-40EE-3756-C9410C579A23" name="Member PK">
+<createdBy>mabo0003</createdBy>
+<createdTime>2021-09-11 10:55:27 UTC</createdTime>
+<ownerDesignName>logicalModel</ownerDesignName>
+<engineerTo>
+<item key="E075BB35-F1EF-BBEC-8ED6-651FC049A85A" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>3C408569-22E2-C6C2-3CDD-F06376BB4089</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

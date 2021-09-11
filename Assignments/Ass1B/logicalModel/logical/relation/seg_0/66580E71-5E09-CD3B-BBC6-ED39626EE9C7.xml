@@ -1,0 +1,22 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="STAFF_ASSESSMENT" directorySegmentName="seg_0" id="66580E71-5E09-CD3B-BBC6-ED39626EE9C7">
+<createdBy>mabo0003</createdBy>
+<createdTime>2021-09-11 11:38:21 UTC</createdTime>
+<ownerDesignName>logicalModel</ownerDesignName>
+<engineerTo>
+<item key="E075BB35-F1EF-BBEC-8ED6-651FC049A85A" value="true"/>
+</engineerTo>
+<sourcePk>601CD02E-A44B-6488-F9DF-6DC53624DF63</sourcePk>
+<targetPk>1EF18B81-36DF-4D72-4137-E59C79BD6E09</targetPk>
+<identifying>false</identifying>
+<nameOnSource>Runs</nameOnSource>
+<nameOnTarget> </nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>FCA11762-1EEA-2BD2-6DB9-54602580AD87</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>47C44039-18C7-3EA2-C52B-BDD3E8CFF7AC</targetEntity>
+<transferable>true</transferable>
+<deleteRule>CASCADE</deleteRule>
+</Relation>
