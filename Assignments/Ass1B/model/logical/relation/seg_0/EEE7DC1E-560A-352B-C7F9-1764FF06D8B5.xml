@@ -1,0 +1,23 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="STAFF_CENTRE" directorySegmentName="seg_0" id="EEE7DC1E-560A-352B-C7F9-1764FF06D8B5">
+<createdBy>mabo0003</createdBy>
+<createdTime>2021-09-12 20:47:32 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="27B37CC6-12AB-79BB-C011-0CFC7C8ACD7B" value="true"/>
+</engineerTo>
+<sourcePk>CC300247-3728-84DF-B914-668DEC1CC9E9</sourcePk>
+<targetPk>E459A76C-3907-359C-B43A-205FF69B708F</targetPk>
+<dominantRole>82725F10-028F-E74D-02CB-D703D0C467FC</dominantRole>
+<identifying>false</identifying>
+<nameOnSource>Manages</nameOnSource>
+<nameOnTarget> </nameOnTarget>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>82725F10-028F-E74D-02CB-D703D0C467FC</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>CE8BCE06-AA22-5264-250E-65D996CEDD2A</targetEntity>
+<transferable>true</transferable>
+<deleteRule>SET NULL</deleteRule>
+</Relation>

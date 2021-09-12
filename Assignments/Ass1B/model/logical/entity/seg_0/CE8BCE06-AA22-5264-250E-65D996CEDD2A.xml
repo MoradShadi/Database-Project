@@ -100,6 +100,22 @@
 <dataTypePrecision>8</dataTypePrecision>
 <ownDataTypeParameters>,8,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="staff_id" id="2D565BE2-8FF9-4484-C65A-5C45AD2A13CE">
+<createdBy>mabo0003</createdBy>
+<createdTime>2021-09-12 20:47:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[staff ID]]></commentInRDBMS>
+<generatorID>EEE7DC1E-560A-352B-C7F9-1764FF06D8B5</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="27B37CC6-12AB-79BB-C011-0CFC7C8ACD7B" value="true"/>
+</engineerTo>
+<referedAttribute>AEF714FA-C802-7C20-5908-E2FE63471BF5</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="E459A76C-3907-359C-B43A-205FF69B708F" name="Fitness Centre PK">

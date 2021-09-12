@@ -15,6 +15,22 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="centre_id" id="D7A4BA2A-A7EF-14EC-1249-9153AB9858FF">
+<createdBy>mabo0003</createdBy>
+<createdTime>2021-09-12 20:53:28 UTC</createdTime>
+<commentInRDBMS><![CDATA[Centre ID]]></commentInRDBMS>
+<generatorID>E0C2C8C7-F356-5AAD-701C-C65ED6A0C54D</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="27B37CC6-12AB-79BB-C011-0CFC7C8ACD7B" value="true"/>
+</engineerTo>
+<referedAttribute>6360024E-A163-69C7-9478-1D6879314B90</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 <Attribute name="facility_room_numb" id="51CE8622-7683-D2A4-D05C-C0C3F70B01E7">
 <createdBy>mabo0003</createdBy>
 <createdTime>2021-09-12 20:44:34 UTC</createdTime>
@@ -84,6 +100,7 @@
 <pk>true</pk>
 <usedAttributes>
 <attributeRef>51CE8622-7683-D2A4-D05C-C0C3F70B01E7</attributeRef>
+<attributeRef>D7A4BA2A-A7EF-14EC-1249-9153AB9858FF</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

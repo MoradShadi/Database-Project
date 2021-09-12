@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="STAFF_ASSESSMENT" directorySegmentName="seg_0" id="CD62CEEC-504A-F939-4C4A-456B9C2204BA">
+<createdBy>mabo0003</createdBy>
+<createdTime>2021-09-12 20:56:42 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="27B37CC6-12AB-79BB-C011-0CFC7C8ACD7B" value="true"/>
+</engineerTo>
+<sourcePk>CC300247-3728-84DF-B914-668DEC1CC9E9</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>Runs</nameOnSource>
+<nameOnTarget> </nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>82725F10-028F-E74D-02CB-D703D0C467FC</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>CAAC6CAF-BBDD-200F-D313-1DCC7820BC2B</targetEntity>
+<transferable>true</transferable>
+<deleteRule>SET NULL</deleteRule>
+</Relation>

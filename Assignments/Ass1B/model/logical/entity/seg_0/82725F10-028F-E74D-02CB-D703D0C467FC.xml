@@ -100,6 +100,38 @@
 <dataTypeSize>1</dataTypeSize>
 <ownDataTypeParameters>1,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="centre_id" id="5FA00689-4136-0507-0EFB-9689ACCB9965">
+<createdBy>mabo0003</createdBy>
+<createdTime>2021-09-12 20:50:17 UTC</createdTime>
+<commentInRDBMS><![CDATA[Centre ID]]></commentInRDBMS>
+<generatorID>9322F491-477D-DE68-221B-541CD8996487</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="27B37CC6-12AB-79BB-C011-0CFC7C8ACD7B" value="true"/>
+</engineerTo>
+<referedAttribute>6360024E-A163-69C7-9478-1D6879314B90</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="role_id" id="D8D16D48-0EC4-B0B9-6065-3C0E12A72E8E">
+<createdBy>mabo0003</createdBy>
+<createdTime>2021-09-12 20:52:40 UTC</createdTime>
+<commentInRDBMS><![CDATA[role ID]]></commentInRDBMS>
+<generatorID>771C34F9-BFDF-D6B4-EA95-3D2243C1A16F</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="27B37CC6-12AB-79BB-C011-0CFC7C8ACD7B" value="true"/>
+</engineerTo>
+<referedAttribute>5553EEC4-1D87-0472-BF6A-EF1181656DCA</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="CC300247-3728-84DF-B914-668DEC1CC9E9" name="Staff PK">

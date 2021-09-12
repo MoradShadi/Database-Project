@@ -14,4 +14,123 @@
 <maxVolumes>9999999</maxVolumes>
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="member_id" id="1C9DFA73-C6CB-C5AE-218B-D913C8CF2AD3">
+<createdBy>mabo0003</createdBy>
+<createdTime>2021-09-12 20:57:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[member ID]]></commentInRDBMS>
+<generatorID>AC7DDD2E-4945-64F8-4D58-FF23E76666B3</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="27B37CC6-12AB-79BB-C011-0CFC7C8ACD7B" value="true"/>
+</engineerTo>
+<referedAttribute>5F930905-DD39-98C9-ECCB-097EA51FE80E</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="assessment_date" id="B988B636-E7E5-B864-7FFC-EF1480A20827">
+<createdBy>mabo0003</createdBy>
+<createdTime>2021-09-12 20:54:45 UTC</createdTime>
+<commentInRDBMS><![CDATA[date of assessment]]></commentInRDBMS>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="27B37CC6-12AB-79BB-C011-0CFC7C8ACD7B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="member_weight" id="5777E41A-C62E-A24C-483A-C4A62D980A47">
+<createdBy>mabo0003</createdBy>
+<createdTime>2021-09-12 20:55:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[weight of member]]></commentInRDBMS>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="27B37CC6-12AB-79BB-C011-0CFC7C8ACD7B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="member_bloodpressure" id="6D2ACFAC-B3B0-2B31-4EE6-62738665C15E">
+<createdBy>mabo0003</createdBy>
+<createdTime>2021-09-12 20:55:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[blood prressure reading]]></commentInRDBMS>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="27B37CC6-12AB-79BB-C011-0CFC7C8ACD7B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>6</dataTypeSize>
+<ownDataTypeParameters>6,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="member_BMI" id="0B34F2B5-2B2D-0C4F-AD46-9C2D12096E40">
+<createdBy>mabo0003</createdBy>
+<createdTime>2021-09-12 20:55:57 UTC</createdTime>
+<commentInRDBMS><![CDATA[BMI]]></commentInRDBMS>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="27B37CC6-12AB-79BB-C011-0CFC7C8ACD7B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>1</dataTypeScale>
+<ownDataTypeParameters>,3,1</ownDataTypeParameters>
+</Attribute>
+<Attribute name="memberr_VO2Max" id="B336CF40-D37B-91C0-F648-6B8B6D28BE6D">
+<createdBy>mabo0003</createdBy>
+<createdTime>2021-09-12 20:56:14 UTC</createdTime>
+<commentInRDBMS><![CDATA[VO2Max reading]]></commentInRDBMS>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="27B37CC6-12AB-79BB-C011-0CFC7C8ACD7B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<ownDataTypeParameters>3,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="staff_id" id="FE2CC9BC-90AC-D269-5CCA-95C977561C70">
+<createdBy>mabo0003</createdBy>
+<createdTime>2021-09-12 20:56:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[staff ID]]></commentInRDBMS>
+<generatorID>CD62CEEC-504A-F939-4C4A-456B9C2204BA</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="27B37CC6-12AB-79BB-C011-0CFC7C8ACD7B" value="true"/>
+</engineerTo>
+<referedAttribute>AEF714FA-C802-7C20-5908-E2FE63471BF5</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="0947EE89-222B-5300-865C-CB8F462A0889" name="Assessments PK">
+<createdBy>mabo0003</createdBy>
+<createdTime>2021-09-12 20:54:57 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="27B37CC6-12AB-79BB-C011-0CFC7C8ACD7B" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>B988B636-E7E5-B864-7FFC-EF1480A20827</attributeRef>
+<attributeRef>1C9DFA73-C6CB-C5AE-218B-D913C8CF2AD3</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
 </Entity>
