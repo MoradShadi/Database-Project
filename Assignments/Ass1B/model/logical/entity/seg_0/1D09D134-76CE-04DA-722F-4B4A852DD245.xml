@@ -14,4 +14,105 @@
 <maxVolumes>9999999</maxVolumes>
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="member_id" id="5F930905-DD39-98C9-ECCB-097EA51FE80E">
+<createdBy>mabo0003</createdBy>
+<createdTime>2021-09-12 20:42:17 UTC</createdTime>
+<commentInRDBMS><![CDATA[member ID]]></commentInRDBMS>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="27B37CC6-12AB-79BB-C011-0CFC7C8ACD7B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="member_fname" id="D9C04D32-701F-7F57-26F9-997223675CF9">
+<createdBy>mabo0003</createdBy>
+<createdTime>2021-09-12 20:42:39 UTC</createdTime>
+<commentInRDBMS><![CDATA[first name]]></commentInRDBMS>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="27B37CC6-12AB-79BB-C011-0CFC7C8ACD7B" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="member_lname" id="1943C6CC-5BEA-6BCC-BB4A-099922FD3BDF">
+<createdBy>mabo0003</createdBy>
+<createdTime>2021-09-12 20:42:57 UTC</createdTime>
+<commentInRDBMS><![CDATA[last name]]></commentInRDBMS>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="27B37CC6-12AB-79BB-C011-0CFC7C8ACD7B" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="memberr_address" id="0081AADE-12CD-6373-328C-B907CDF30285">
+<createdBy>mabo0003</createdBy>
+<createdTime>2021-09-12 20:43:15 UTC</createdTime>
+<commentInRDBMS><![CDATA[address]]></commentInRDBMS>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="27B37CC6-12AB-79BB-C011-0CFC7C8ACD7B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="member_phone" id="4664238E-B793-2090-ABAD-06D64E84856E">
+<createdBy>mabo0003</createdBy>
+<createdTime>2021-09-12 20:43:30 UTC</createdTime>
+<commentInRDBMS><![CDATA[phone number]]></commentInRDBMS>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="27B37CC6-12AB-79BB-C011-0CFC7C8ACD7B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="member_join_date" id="74C5547F-6669-E25E-106F-00853FF42289">
+<createdBy>mabo0003</createdBy>
+<createdTime>2021-09-12 20:43:49 UTC</createdTime>
+<commentInRDBMS><![CDATA[date the memberr joined]]></commentInRDBMS>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="27B37CC6-12AB-79BB-C011-0CFC7C8ACD7B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="351C3BEB-EC8F-613D-2767-0E7DD6A36BA6" name="Member PK">
+<createdBy>mabo0003</createdBy>
+<createdTime>2021-09-12 20:42:32 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="27B37CC6-12AB-79BB-C011-0CFC7C8ACD7B" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>5F930905-DD39-98C9-ECCB-097EA51FE80E</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
 </Entity>

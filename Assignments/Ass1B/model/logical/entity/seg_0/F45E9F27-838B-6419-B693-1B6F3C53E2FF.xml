@@ -14,4 +14,48 @@
 <maxVolumes>9999999</maxVolumes>
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="class_type" id="D8B88A26-BEB1-5CE3-E16E-4489FE627751">
+<createdBy>mabo0003</createdBy>
+<createdTime>2021-09-12 20:41:18 UTC</createdTime>
+<commentInRDBMS><![CDATA[type of class]]></commentInRDBMS>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="27B37CC6-12AB-79BB-C011-0CFC7C8ACD7B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>8</dataTypeSize>
+<ownDataTypeParameters>8,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="class_desc" id="FBA4DF2E-4194-34A6-0401-ECD423C012AC">
+<createdBy>mabo0003</createdBy>
+<createdTime>2021-09-12 20:41:35 UTC</createdTime>
+<commentInRDBMS><![CDATA[descriptioon of class]]></commentInRDBMS>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="27B37CC6-12AB-79BB-C011-0CFC7C8ACD7B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="47FB6664-80CB-D563-3FF2-AFB5A9A45790" name="Class Description PK">
+<createdBy>mabo0003</createdBy>
+<createdTime>2021-09-12 20:41:28 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="27B37CC6-12AB-79BB-C011-0CFC7C8ACD7B" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>D8B88A26-BEB1-5CE3-E16E-4489FE627751</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
 </Entity>

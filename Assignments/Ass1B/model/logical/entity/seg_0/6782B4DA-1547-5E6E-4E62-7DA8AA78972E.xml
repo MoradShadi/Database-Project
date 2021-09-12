@@ -14,4 +14,48 @@
 <maxVolumes>9999999</maxVolumes>
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="role_id" id="5553EEC4-1D87-0472-BF6A-EF1181656DCA">
+<createdBy>mabo0003</createdBy>
+<createdTime>2021-09-12 20:40:14 UTC</createdTime>
+<commentInRDBMS><![CDATA[role ID]]></commentInRDBMS>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="27B37CC6-12AB-79BB-C011-0CFC7C8ACD7B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="role_name" id="22E50C96-3CE1-6BB5-74BC-D09D9C811B0C">
+<createdBy>mabo0003</createdBy>
+<createdTime>2021-09-12 20:40:30 UTC</createdTime>
+<commentInRDBMS><![CDATA[name of the role]]></commentInRDBMS>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="27B37CC6-12AB-79BB-C011-0CFC7C8ACD7B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="3226F331-F70A-8E9C-8479-EBC1BBF1BB7B" name="Role PK">
+<createdBy>mabo0003</createdBy>
+<createdTime>2021-09-12 20:40:24 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="27B37CC6-12AB-79BB-C011-0CFC7C8ACD7B" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>5553EEC4-1D87-0472-BF6A-EF1181656DCA</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
 </Entity>

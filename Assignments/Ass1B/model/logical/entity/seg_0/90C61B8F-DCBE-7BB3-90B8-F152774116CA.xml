@@ -14,4 +14,77 @@
 <maxVolumes>9999999</maxVolumes>
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="facility_room_numb" id="51CE8622-7683-D2A4-D05C-C0C3F70B01E7">
+<createdBy>mabo0003</createdBy>
+<createdTime>2021-09-12 20:44:34 UTC</createdTime>
+<commentInRDBMS><![CDATA[room number]]></commentInRDBMS>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="27B37CC6-12AB-79BB-C011-0CFC7C8ACD7B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="facilty_name" id="8D620576-5E1B-4E09-3B9B-9BA2BDFC7F9B">
+<createdBy>mabo0003</createdBy>
+<createdTime>2021-09-12 20:44:58 UTC</createdTime>
+<commentInRDBMS><![CDATA[name]]></commentInRDBMS>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="27B37CC6-12AB-79BB-C011-0CFC7C8ACD7B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="facility_desc" id="1D860B43-C1E1-3D56-4A21-A0AD0F7D3F43">
+<createdBy>mabo0003</createdBy>
+<createdTime>2021-09-12 20:45:15 UTC</createdTime>
+<commentInRDBMS><![CDATA[description]]></commentInRDBMS>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="27B37CC6-12AB-79BB-C011-0CFC7C8ACD7B" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="facility_capacity" id="67C16D83-A1F4-6DD1-2E55-A5063099924B">
+<createdBy>mabo0003</createdBy>
+<createdTime>2021-09-12 20:45:30 UTC</createdTime>
+<commentInRDBMS><![CDATA[capacity]]></commentInRDBMS>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="27B37CC6-12AB-79BB-C011-0CFC7C8ACD7B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="E7C8072C-8762-7EA8-2B62-0F88007284B9" name="Facility PK">
+<createdBy>mabo0003</createdBy>
+<createdTime>2021-09-12 20:44:48 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="27B37CC6-12AB-79BB-C011-0CFC7C8ACD7B" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>51CE8622-7683-D2A4-D05C-C0C3F70B01E7</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
 </Entity>
