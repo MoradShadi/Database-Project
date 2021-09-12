@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="CLASS_ENROLLMENT" directorySegmentName="seg_0" id="351E2EF4-E331-A64E-596B-9C9A4D0357FE">
+<createdBy>mabo0003</createdBy>
+<createdTime>2021-09-12 21:08:21 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="27B37CC6-12AB-79BB-C011-0CFC7C8ACD7B" value="true"/>
+</engineerTo>
+<sourcePk>9FC0529D-6460-EB3D-CD09-8051A710878D</sourcePk>
+<identifying>true</identifying>
+<nameOnSource>Has</nameOnSource>
+<nameOnTarget> </nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>D90A0C25-E30C-6F78-D2EA-C36C18A4535B</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>84A6FE8E-5B40-AB31-299E-E5A2E73213A0</targetEntity>
+<transferable>true</transferable>
+<deleteRule>CASCADE</deleteRule>
+</Relation>

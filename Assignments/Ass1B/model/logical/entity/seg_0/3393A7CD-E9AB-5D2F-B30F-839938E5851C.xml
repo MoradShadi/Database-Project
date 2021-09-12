@@ -14,4 +14,114 @@
 <maxVolumes>9999999</maxVolumes>
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="class_numb" id="5607AA9D-F9CA-8679-211C-2A6C322A722C">
+<createdBy>mabo0003</createdBy>
+<createdTime>2021-09-12 21:09:49 UTC</createdTime>
+<commentInRDBMS><![CDATA[class number]]></commentInRDBMS>
+<generatorID>EE3735A8-77C5-CAB9-8129-9BFAC7A10CAD</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="27B37CC6-12AB-79BB-C011-0CFC7C8ACD7B" value="true"/>
+</engineerTo>
+<referedAttribute>0DCA3F05-9729-0DB7-2009-8545E57E9F41</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="centre_id" id="F573ECE3-8B73-9669-278D-AF6AE5343618">
+<createdBy>mabo0003</createdBy>
+<createdTime>2021-09-12 21:09:49 UTC</createdTime>
+<commentInRDBMS><![CDATA[Centre ID]]></commentInRDBMS>
+<generatorID>EE3735A8-77C5-CAB9-8129-9BFAC7A10CAD</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="27B37CC6-12AB-79BB-C011-0CFC7C8ACD7B" value="true"/>
+</engineerTo>
+<referedAttribute>54897D8A-6743-09E8-3F88-80756E4A1FD4</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="class_start_date_time" id="9C90802B-9F1F-7762-8691-EF4E7A3A3D43">
+<createdBy>mabo0003</createdBy>
+<createdTime>2021-09-12 21:09:49 UTC</createdTime>
+<commentInRDBMS><![CDATA[starrt date and time of class]]></commentInRDBMS>
+<generatorID>EE3735A8-77C5-CAB9-8129-9BFAC7A10CAD</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="27B37CC6-12AB-79BB-C011-0CFC7C8ACD7B" value="true"/>
+</engineerTo>
+<referedAttribute>3AE0A4C4-8149-B460-DF3C-EE19D438A924</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="member_id" id="C27F80F1-C0CE-C613-2AB6-89001E909B95">
+<createdBy>mabo0003</createdBy>
+<createdTime>2021-09-12 21:10:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[member ID]]></commentInRDBMS>
+<generatorID>3EC58B97-B744-ABC5-A7EE-B618E1A52824</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="27B37CC6-12AB-79BB-C011-0CFC7C8ACD7B" value="true"/>
+</engineerTo>
+<referedAttribute>5F930905-DD39-98C9-ECCB-097EA51FE80E</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="sessioin_date" id="DA9BFC7D-0AE2-790D-627F-25EE9F75F7BE">
+<createdBy>mabo0003</createdBy>
+<createdTime>2021-09-12 21:11:30 UTC</createdTime>
+<commentInRDBMS><![CDATA[Date of session]]></commentInRDBMS>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="27B37CC6-12AB-79BB-C011-0CFC7C8ACD7B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="total_attendance" id="2553ED0E-4EB9-F796-859C-D35768C0BD3B">
+<createdBy>mabo0003</createdBy>
+<createdTime>2021-09-12 21:11:46 UTC</createdTime>
+<commentInRDBMS><![CDATA[total attendance of this member for this class]]></commentInRDBMS>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="27B37CC6-12AB-79BB-C011-0CFC7C8ACD7B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="F649341D-1EAD-0722-D2B2-33C452738017" name="Attendance PK">
+<createdBy>mabo0003</createdBy>
+<createdTime>2021-09-12 21:10:14 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="27B37CC6-12AB-79BB-C011-0CFC7C8ACD7B" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>5607AA9D-F9CA-8679-211C-2A6C322A722C</attributeRef>
+<attributeRef>F573ECE3-8B73-9669-278D-AF6AE5343618</attributeRef>
+<attributeRef>9C90802B-9F1F-7762-8691-EF4E7A3A3D43</attributeRef>
+<attributeRef>C27F80F1-C0CE-C613-2AB6-89001E909B95</attributeRef>
+<attributeRef>DA9BFC7D-0AE2-790D-627F-25EE9F75F7BE</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
 </Entity>

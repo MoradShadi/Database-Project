@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="MEMBER_ATTENDANCE" directorySegmentName="seg_0" id="3EC58B97-B744-ABC5-A7EE-B618E1A52824">
+<createdBy>mabo0003</createdBy>
+<createdTime>2021-09-12 21:10:42 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="27B37CC6-12AB-79BB-C011-0CFC7C8ACD7B" value="true"/>
+</engineerTo>
+<sourcePk>351C3BEB-EC8F-613D-2767-0E7DD6A36BA6</sourcePk>
+<identifying>true</identifying>
+<nameOnSource>Records</nameOnSource>
+<nameOnTarget> </nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>1D09D134-76CE-04DA-722F-4B4A852DD245</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>3393A7CD-E9AB-5D2F-B30F-839938E5851C</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>
