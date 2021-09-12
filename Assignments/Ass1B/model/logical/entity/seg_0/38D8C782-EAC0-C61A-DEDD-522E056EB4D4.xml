@@ -14,4 +14,100 @@
 <maxVolumes>9999999</maxVolumes>
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="staff_id" id="AE688945-4A66-DA92-16AE-833C6554B373">
+<createdBy>mabo0003</createdBy>
+<createdTime>2021-09-12 21:17:46 UTC</createdTime>
+<commentInRDBMS><![CDATA[staff ID]]></commentInRDBMS>
+<generatorID>F701338B-1FE7-587B-1798-DF3EADB4F304</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="27B37CC6-12AB-79BB-C011-0CFC7C8ACD7B" value="true"/>
+</engineerTo>
+<referedAttribute>AEF714FA-C802-7C20-5908-E2FE63471BF5</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="class_numb" id="A3F10B71-151A-0C42-20EC-528F1D71A1CF">
+<createdBy>mabo0003</createdBy>
+<createdTime>2021-09-12 21:20:35 UTC</createdTime>
+<commentInRDBMS><![CDATA[class number]]></commentInRDBMS>
+<generatorID>4F655428-96CF-53DC-8BC8-3D27C654FC34</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="27B37CC6-12AB-79BB-C011-0CFC7C8ACD7B" value="true"/>
+</engineerTo>
+<referedAttribute>0DCA3F05-9729-0DB7-2009-8545E57E9F41</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="centre_id" id="324BE0EF-716A-E00F-CF0B-C4008B7850CD">
+<createdBy>mabo0003</createdBy>
+<createdTime>2021-09-12 21:20:35 UTC</createdTime>
+<commentInRDBMS><![CDATA[Centre ID]]></commentInRDBMS>
+<generatorID>4F655428-96CF-53DC-8BC8-3D27C654FC34</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="27B37CC6-12AB-79BB-C011-0CFC7C8ACD7B" value="true"/>
+</engineerTo>
+<referedAttribute>54897D8A-6743-09E8-3F88-80756E4A1FD4</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="class_start_date_time" id="BFAE5F38-63D1-07AD-19B5-EBBA318258D9">
+<createdBy>mabo0003</createdBy>
+<createdTime>2021-09-12 21:20:35 UTC</createdTime>
+<commentInRDBMS><![CDATA[starrt date and time of class]]></commentInRDBMS>
+<generatorID>4F655428-96CF-53DC-8BC8-3D27C654FC34</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="27B37CC6-12AB-79BB-C011-0CFC7C8ACD7B" value="true"/>
+</engineerTo>
+<referedAttribute>3AE0A4C4-8149-B460-DF3C-EE19D438A924</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="class_leader" id="091F5FCC-33B3-A646-1AF1-0E025A1840ED">
+<createdBy>mabo0003</createdBy>
+<createdTime>2021-09-12 21:16:56 UTC</createdTime>
+<commentInRDBMS><![CDATA[is this staff member the class leader]]></commentInRDBMS>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="27B37CC6-12AB-79BB-C011-0CFC7C8ACD7B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="68E32214-5935-1CA8-3A3D-A87A7190A232" name="Classs Staffing PK">
+<createdBy>mabo0003</createdBy>
+<createdTime>2021-09-12 21:20:07 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="27B37CC6-12AB-79BB-C011-0CFC7C8ACD7B" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>AE688945-4A66-DA92-16AE-833C6554B373</attributeRef>
+<attributeRef>A3F10B71-151A-0C42-20EC-528F1D71A1CF</attributeRef>
+<attributeRef>324BE0EF-716A-E00F-CF0B-C4008B7850CD</attributeRef>
+<attributeRef>BFAE5F38-63D1-07AD-19B5-EBBA318258D9</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
 </Entity>
