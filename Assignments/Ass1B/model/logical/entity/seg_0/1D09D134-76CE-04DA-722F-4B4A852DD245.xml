@@ -100,6 +100,22 @@
 <logicalDatatype>LOGDT007</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="centre_id" id="C5CF0B17-E575-C9A8-63CA-698659C58F06">
+<createdBy>mabo0003</createdBy>
+<createdTime>2021-09-12 21:30:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[Centre ID]]></commentInRDBMS>
+<generatorID>791DBE8F-31A8-A9BA-F149-E5F35095F8DC</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="27B37CC6-12AB-79BB-C011-0CFC7C8ACD7B" value="true"/>
+</engineerTo>
+<referedAttribute>6360024E-A163-69C7-9478-1D6879314B90</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="351C3BEB-EC8F-613D-2767-0E7DD6A36BA6" name="Member PK">
