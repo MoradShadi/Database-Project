@@ -23,10 +23,20 @@
 <engineerTo>
 <item key="27B37CC6-12AB-79BB-C011-0CFC7C8ACD7B" value="true"/>
 </engineerTo>
+<constraintName>chk_role</constraintName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT025</logicalDatatype>
 <dataTypeSize>1</dataTypeSize>
+<listOfValues>
+<valueDef value="A" description="Administration"/>
+<valueDef value="C" description="Cleaner"/>
+<valueDef value="D" description="Instructor Dry"/>
+<valueDef value="M" description="Manager"/>
+<valueDef value="P" description="Instructor Pool"/>
+<valueDef value="S" description="Sales"/>
+<valueDef value="T" description="Security"/>
+</listOfValues>
 <ownDataTypeParameters>1,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="role_name" id="22E50C96-3CE1-6BB5-74BC-D09D9C811B0C">

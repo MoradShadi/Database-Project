@@ -43,7 +43,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>3</dataTypeSize>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>3,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="class_start_date_time" id="3AE0A4C4-8149-B460-DF3C-EE19D438A924">
 <createdBy>mabo0003</createdBy>
@@ -116,7 +116,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>8</dataTypeSize>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>8,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="facility_room_numb" id="C588C065-CBEF-DB81-AE37-80D3F0750FBA">
 <createdBy>mabo0003</createdBy>
@@ -132,7 +132,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>2</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="class_gender_restrictions" id="78C9D9B7-FCC1-C4CC-58E5-863AD6116903">
 <createdBy>mabo0003</createdBy>
@@ -142,10 +142,16 @@
 <engineerTo>
 <item key="27B37CC6-12AB-79BB-C011-0CFC7C8ACD7B" value="true"/>
 </engineerTo>
+<constraintName>chk_gender</constraintName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT025</logicalDatatype>
 <dataTypeSize>1</dataTypeSize>
+<listOfValues>
+<valueDef value="-" description="No restriction"/>
+<valueDef value="F" description="Female only"/>
+<valueDef value="M" description="Male only"/>
+</listOfValues>
 <ownDataTypeParameters>1,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
