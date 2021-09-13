@@ -15,6 +15,20 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="enrollment_no" id="E398F2F1-EB5F-583D-AED3-EB4D3B20C124">
+<createdBy>mabo0003</createdBy>
+<createdTime>2021-09-13 14:26:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[surrogate key]]></commentInRDBMS>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="27B37CC6-12AB-79BB-C011-0CFC7C8ACD7B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+</Attribute>
 <Attribute name="member_id" id="BA29AB62-76B4-3DCF-C59A-1AC4584BBC16">
 <createdBy>mabo0003</createdBy>
 <createdTime>2021-09-12 21:07:35 UTC</createdTime>
@@ -101,6 +115,18 @@
 <item key="27B37CC6-12AB-79BB-C011-0CFC7C8ACD7B" value="true"/>
 </engineerTo>
 <pk>true</pk>
+<usedAttributes>
+<attributeRef>E398F2F1-EB5F-583D-AED3-EB4D3B20C124</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="A166E765-4CBF-7668-6CA4-B2716F3CAC96" name="Enrollment_NK">
+<createdBy>mabo0003</createdBy>
+<createdTime>2021-09-13 14:28:50 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="27B37CC6-12AB-79BB-C011-0CFC7C8ACD7B" value="true"/>
+</engineerTo>
+<newElementsIDs>BA29AB62-76B4-3DCF-C59A-1AC4584BBC16,649EBFDB-F9F8-705A-0660-7F4DFC259399,B2D1C0A2-A4C9-33DE-5CC5-73D34FEA16F7,3894074A-286F-1E06-5FCE-51BD03156F60,46670891-BDFF-B0AE-BB69-EBCA863D4A1D</newElementsIDs>
 <usedAttributes>
 <attributeRef>BA29AB62-76B4-3DCF-C59A-1AC4584BBC16</attributeRef>
 <attributeRef>649EBFDB-F9F8-705A-0660-7F4DFC259399</attributeRef>

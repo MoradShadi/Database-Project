@@ -15,6 +15,20 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="attendance_no" id="6207CFD7-B04A-2672-5FDA-9E57FDE23111">
+<createdBy>mabo0003</createdBy>
+<createdTime>2021-09-13 14:31:33 UTC</createdTime>
+<commentInRDBMS><![CDATA[surrogate key]]></commentInRDBMS>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="27B37CC6-12AB-79BB-C011-0CFC7C8ACD7B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+</Attribute>
 <Attribute name="class_numb" id="5607AA9D-F9CA-8679-211C-2A6C322A722C">
 <createdBy>mabo0003</createdBy>
 <createdTime>2021-09-12 21:09:49 UTC</createdTime>
@@ -115,6 +129,18 @@
 <item key="27B37CC6-12AB-79BB-C011-0CFC7C8ACD7B" value="true"/>
 </engineerTo>
 <pk>true</pk>
+<usedAttributes>
+<attributeRef>6207CFD7-B04A-2672-5FDA-9E57FDE23111</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="F65F93DC-9DF2-84E9-105C-910971D606D1" name="Attendance_NK">
+<createdBy>mabo0003</createdBy>
+<createdTime>2021-09-13 14:32:38 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="27B37CC6-12AB-79BB-C011-0CFC7C8ACD7B" value="true"/>
+</engineerTo>
+<newElementsIDs>5607AA9D-F9CA-8679-211C-2A6C322A722C,F573ECE3-8B73-9669-278D-AF6AE5343618,9C90802B-9F1F-7762-8691-EF4E7A3A3D43,C27F80F1-C0CE-C613-2AB6-89001E909B95,DA9BFC7D-0AE2-790D-627F-25EE9F75F7BE</newElementsIDs>
 <usedAttributes>
 <attributeRef>5607AA9D-F9CA-8679-211C-2A6C322A722C</attributeRef>
 <attributeRef>F573ECE3-8B73-9669-278D-AF6AE5343618</attributeRef>
