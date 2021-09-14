@@ -29,7 +29,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>4</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="assessment_date" id="B988B636-E7E5-B864-7FFC-EF1480A20827">
 <createdBy>mabo0003</createdBy>
@@ -115,7 +115,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>3</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
@@ -123,8 +123,9 @@
 <createdBy>mabo0003</createdBy>
 <createdTime>2021-09-12 20:54:57 UTC</createdTime>
 <ownerDesignName>model</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="27B37CC6-12AB-79BB-C011-0CFC7C8ACD7B" value="true"/>
+<item key="27B37CC6-12AB-79BB-C011-0CFC7C8ACD7B" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

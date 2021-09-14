@@ -1,0 +1,62 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CCCF24F0-A174-F2C6-6C59-F4B97CC43D0F" name="Role">
+<createdBy>mabo0003</createdBy>
+<createdTime>2021-09-14 13:37:30 UTC</createdTime>
+<generatorID>6782B4DA-1547-5E6E-4E62-7DA8AA78972E</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="role_id" id="4B560CA0-DA22-C00D-8474-87B50478F4B6">
+<createdBy>mabo0003</createdBy>
+<createdTime>2021-09-14 13:37:30 UTC</createdTime>
+<commentInRDBMS><![CDATA[role ID]]></commentInRDBMS>
+<generatorID>5553EEC4-1D87-0472-BF6A-EF1181656DCA</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<constraintName>chk_role</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<listOfValues>
+<valueDef value="A" description="Administration"/>
+<valueDef value="C" description="Cleaner"/>
+<valueDef value="D" description="Instructor Dry"/>
+<valueDef value="M" description="Manager"/>
+<valueDef value="P" description="Instructor Pool"/>
+<valueDef value="S" description="Sales"/>
+<valueDef value="T" description="Security"/>
+</listOfValues>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="role_name" id="CB205207-22E8-9030-B3CF-25E95B85567B">
+<createdBy>mabo0003</createdBy>
+<createdTime>2021-09-14 13:37:30 UTC</createdTime>
+<commentInRDBMS><![CDATA[name of the role]]></commentInRDBMS>
+<generatorID>22E50C96-3CE1-6BB5-74BC-D09D9C811B0C</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9F736A74-6B85-775A-0B20-B47E521978E5" name="Role_PK">
+<createdBy>mabo0003</createdBy>
+<createdTime>2021-09-14 13:37:30 UTC</createdTime>
+<generatorID>3226F331-F70A-8E9C-8479-EBC1BBF1BB7B</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4B560CA0-DA22-C00D-8474-87B50478F4B6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

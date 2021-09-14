@@ -1,0 +1,144 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A26B5A98-189D-9E6D-F8DA-A8C724D42CF8" name="Fitness_Centre">
+<createdBy>mabo0003</createdBy>
+<createdTime>2021-09-14 13:37:30 UTC</createdTime>
+<generatorID>CE8BCE06-AA22-5264-250E-65D996CEDD2A</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="centre_id" id="C776DBAB-C975-C567-EAB1-01E878C6AA56">
+<createdBy>mabo0003</createdBy>
+<createdTime>2021-09-14 13:37:30 UTC</createdTime>
+<commentInRDBMS><![CDATA[Centre ID]]></commentInRDBMS>
+<generatorID>6360024E-A163-69C7-9478-1D6879314B90</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="centre_name" id="278DEA7D-558A-22D3-CEF8-F4D68BBAE95B">
+<createdBy>mabo0003</createdBy>
+<createdTime>2021-09-14 13:37:30 UTC</createdTime>
+<commentInRDBMS><![CDATA[centre name]]></commentInRDBMS>
+<generatorID>38AAEB0B-2101-AB81-1DA1-1A1B3E020198</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="centre_street" id="4A6640CF-0FA5-60D3-749A-67ACD3E8B235">
+<createdBy>mabo0003</createdBy>
+<createdTime>2021-09-14 13:37:30 UTC</createdTime>
+<commentInRDBMS><![CDATA[centre street name]]></commentInRDBMS>
+<generatorID>6A617162-C3EC-7B90-1453-953029199682</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>8</dataTypeSize>
+<ownDataTypeParameters>8,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="centre_town" id="ED4CD8C9-A87F-C904-A8AF-66CD1C978C73">
+<createdBy>mabo0003</createdBy>
+<createdTime>2021-09-14 13:37:30 UTC</createdTime>
+<commentInRDBMS><![CDATA[centre town name]]></commentInRDBMS>
+<generatorID>3B2AB68C-ACE4-33A8-1C57-80B03892C77E</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>8</dataTypeSize>
+<ownDataTypeParameters>8,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="centre_post" id="940F8BBC-FB35-9428-9F45-7AFC5D222399">
+<createdBy>mabo0003</createdBy>
+<createdTime>2021-09-14 13:37:30 UTC</createdTime>
+<commentInRDBMS><![CDATA[centre post office]]></commentInRDBMS>
+<generatorID>1DFA8BAA-7D8A-A14C-992F-7B810C71E82F</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>8</dataTypeSize>
+<ownDataTypeParameters>8,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="centre_phone" id="BD4D588E-D6EF-4DF4-33F7-A8702FEBA3C2">
+<createdBy>mabo0003</createdBy>
+<createdTime>2021-09-14 13:37:30 UTC</createdTime>
+<commentInRDBMS><![CDATA[centre contact number]]></commentInRDBMS>
+<generatorID>C7F160A3-5FC1-A0F6-E76D-4D207A34B23E</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="staff_id" id="3BC02764-E552-5EE2-7163-3B5912F2C54F">
+<createdBy>mabo0003</createdBy>
+<createdTime>2021-09-14 13:37:30 UTC</createdTime>
+<commentInRDBMS><![CDATA[staff ID]]></commentInRDBMS>
+<generatorID>2D565BE2-8FF9-4484-C65A-5C45AD2A13CE</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D6AA9194-B5CD-361B-344F-473F225FF4FD" referredColumn="FE9197C6-EA0A-D27F-FC9F-2BCDF5159741"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A073EC11-81EB-87A3-1376-FACDFAF790C9" name="Fitness_Centre_PK">
+<createdBy>mabo0003</createdBy>
+<createdTime>2021-09-14 13:37:30 UTC</createdTime>
+<generatorID>E459A76C-3907-359C-B43A-205FF69B708F</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C776DBAB-C975-C567-EAB1-01E878C6AA56"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5A3C81F0-FD9C-254A-BC48-900D93C44016" name="Fitness_Centre__IDX">
+<createdBy>mabo0003</createdBy>
+<createdTime>2021-09-14 13:37:30 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>EEE7DC1E-560A-352B-C7F9-1764FF06D8B5</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="3BC02764-E552-5EE2-7163-3B5912F2C54F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2FFA2857-7E62-1483-CF25-CF711ADA8789" name="STAFF_CENTRE">
+<createdBy>mabo0003</createdBy>
+<createdTime>2021-09-14 13:37:30 UTC</createdTime>
+<generatorID>EEE7DC1E-560A-352B-C7F9-1764FF06D8B5</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3BC02764-E552-5EE2-7163-3B5912F2C54F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

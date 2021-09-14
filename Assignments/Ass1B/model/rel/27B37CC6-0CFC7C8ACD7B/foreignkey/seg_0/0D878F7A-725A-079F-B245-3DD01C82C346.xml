@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="0D878F7A-725A-079F-B245-3DD01C82C346" containerWithKeyObject="CEC70390-B502-8889-63EF-74C3CB79A542" localFKIndex="7AE47053-C745-4406-6DC4-5E627ADBF26D" name="CLASS_CLASSSTAFFING">
+<createdBy>mabo0003</createdBy>
+<createdTime>2021-09-14 13:37:30 UTC</createdTime>
+<generatorID>4F655428-96CF-53DC-8BC8-3D27C654FC34</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<referredTableLongName>Class</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>29897FE6-DB29-B117-E65B-5180F8B3C3E0</referredTableID>
+<keyObject>4D404CF6-B819-202A-BE85-FB67E97EA1A3</keyObject>
+<referredKeyID>4D404CF6-B819-202A-BE85-FB67E97EA1A3</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>class_numb,centre_id,class_start_date_time</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

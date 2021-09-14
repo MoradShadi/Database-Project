@@ -27,8 +27,8 @@
 <referedAttribute>6360024E-A163-69C7-9478-1D6879314B90</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>3</dataTypeSize>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="facility_room_numb" id="51CE8622-7683-D2A4-D05C-C0C3F70B01E7">
@@ -42,8 +42,8 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>2</dataTypePrecision>
-<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="facilty_name" id="8D620576-5E1B-4E09-3B9B-9BA2BDFC7F9B">
 <createdBy>mabo0003</createdBy>
@@ -94,8 +94,9 @@
 <createdBy>mabo0003</createdBy>
 <createdTime>2021-09-12 20:44:48 UTC</createdTime>
 <ownerDesignName>model</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="27B37CC6-12AB-79BB-C011-0CFC7C8ACD7B" value="true"/>
+<item key="27B37CC6-12AB-79BB-C011-0CFC7C8ACD7B" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

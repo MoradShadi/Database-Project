@@ -1,0 +1,108 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="AD831951-AF08-9439-312C-E9F8378311F1" name="Facility">
+<createdBy>mabo0003</createdBy>
+<createdTime>2021-09-14 13:37:30 UTC</createdTime>
+<generatorID>90C61B8F-DCBE-7BB3-90B8-F152774116CA</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="centre_id" id="E809AEC9-130E-D40D-ADCF-A9AACD168C45">
+<createdBy>mabo0003</createdBy>
+<createdTime>2021-09-14 13:37:30 UTC</createdTime>
+<commentInRDBMS><![CDATA[Centre ID]]></commentInRDBMS>
+<generatorID>D7A4BA2A-A7EF-14EC-1249-9153AB9858FF</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3EF0F389-018C-B28D-265A-A5847F7710EE" referredColumn="C776DBAB-C975-C567-EAB1-01E878C6AA56"/>
+</associations>
+</Column>
+<Column name="facility_room_numb" id="34BFAE2E-B1C8-6041-A6AF-DE46E5C00128">
+<createdBy>mabo0003</createdBy>
+<createdTime>2021-09-14 13:37:30 UTC</createdTime>
+<commentInRDBMS><![CDATA[room number]]></commentInRDBMS>
+<generatorID>51CE8622-7683-D2A4-D05C-C0C3F70B01E7</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="facilty_name" id="1F5EA095-EA35-4E0E-D8A2-97C0EE054E0E">
+<createdBy>mabo0003</createdBy>
+<createdTime>2021-09-14 13:37:30 UTC</createdTime>
+<commentInRDBMS><![CDATA[name]]></commentInRDBMS>
+<generatorID>8D620576-5E1B-4E09-3B9B-9BA2BDFC7F9B</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="facility_desc" id="9B01712D-969D-28D2-16A6-A614F6BAFD3D">
+<createdBy>mabo0003</createdBy>
+<createdTime>2021-09-14 13:37:30 UTC</createdTime>
+<commentInRDBMS><![CDATA[description]]></commentInRDBMS>
+<generatorID>1D860B43-C1E1-3D56-4A21-A0AD0F7D3F43</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="facility_capacity" id="9A302BF4-AE04-0CE7-EF50-8739B5543804">
+<createdBy>mabo0003</createdBy>
+<createdTime>2021-09-14 13:37:30 UTC</createdTime>
+<commentInRDBMS><![CDATA[capacity]]></commentInRDBMS>
+<generatorID>67C16D83-A1F4-6DD1-2E55-A5063099924B</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="345DBD48-3A93-BEEC-4A00-E98A29011694" name="Facility_PK">
+<createdBy>mabo0003</createdBy>
+<createdTime>2021-09-14 13:37:30 UTC</createdTime>
+<generatorID>E7C8072C-8762-7EA8-2B62-0F88007284B9</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="34BFAE2E-B1C8-6041-A6AF-DE46E5C00128"/>
+<colUsage columnID="E809AEC9-130E-D40D-ADCF-A9AACD168C45"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="ED311487-1A38-610F-1142-24EF9C850A97" name="CENTRE_FACILITY">
+<createdBy>mabo0003</createdBy>
+<createdTime>2021-09-14 13:37:30 UTC</createdTime>
+<generatorID>E0C2C8C7-F356-5AAD-701C-C65ED6A0C54D</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E809AEC9-130E-D40D-ADCF-A9AACD168C45"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

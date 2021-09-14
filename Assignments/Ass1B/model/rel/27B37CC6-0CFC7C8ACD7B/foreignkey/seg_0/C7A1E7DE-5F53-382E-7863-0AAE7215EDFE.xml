@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="C7A1E7DE-5F53-382E-7863-0AAE7215EDFE" containerWithKeyObject="5AF336D9-B727-EF62-80CF-40EA481A1FCA" localFKIndex="1757FA23-600B-73A2-BE63-FE765F6EBF1F" name="MEMBER_ENROLLMENT">
+<createdBy>mabo0003</createdBy>
+<createdTime>2021-09-14 13:37:30 UTC</createdTime>
+<generatorID>72CEED57-A43C-4D82-7EB1-6FB84A9CD5FE</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<referredTableLongName>Member</referredTableLongName>
+<deleteRule>CASCADE</deleteRule>
+<referredTableID>7982EAEC-3244-A403-2235-D2F909D32730</referredTableID>
+<keyObject>560082D3-2CBD-77CE-8A22-5F088F0CC46B</keyObject>
+<referredKeyID>560082D3-2CBD-77CE-8A22-5F088F0CC46B</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>member_id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

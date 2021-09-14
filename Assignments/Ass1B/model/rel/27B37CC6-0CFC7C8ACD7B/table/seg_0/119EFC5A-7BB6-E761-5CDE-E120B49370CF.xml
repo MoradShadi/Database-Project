@@ -1,0 +1,170 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="119EFC5A-7BB6-E761-5CDE-E120B49370CF" name="Attendance">
+<createdBy>mabo0003</createdBy>
+<createdTime>2021-09-14 13:37:30 UTC</createdTime>
+<generatorID>3393A7CD-E9AB-5D2F-B30F-839938E5851C</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="attendance_no" id="6DD7694C-C1E0-D46B-0458-588674DE28D7">
+<createdBy>mabo0003</createdBy>
+<createdTime>2021-09-14 13:37:30 UTC</createdTime>
+<commentInRDBMS><![CDATA[surrogate key]]></commentInRDBMS>
+<generatorID>6207CFD7-B04A-2672-5FDA-9E57FDE23111</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="class_numb" id="715E6D41-279B-174C-33E0-28A40BB05274">
+<createdBy>mabo0003</createdBy>
+<createdTime>2021-09-14 13:37:30 UTC</createdTime>
+<commentInRDBMS><![CDATA[class number]]></commentInRDBMS>
+<generatorID>5607AA9D-F9CA-8679-211C-2A6C322A722C</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0F26C11B-217D-903A-E81F-D4C268F125A1" referredColumn="00003777-6D0B-7253-255F-D3D3CE3F0F68"/>
+</associations>
+</Column>
+<Column name="centre_id" id="8EF68679-E236-A00B-3737-478DD121CCE1">
+<createdBy>mabo0003</createdBy>
+<createdTime>2021-09-14 13:37:30 UTC</createdTime>
+<commentInRDBMS><![CDATA[Centre ID]]></commentInRDBMS>
+<generatorID>F573ECE3-8B73-9669-278D-AF6AE5343618</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0F26C11B-217D-903A-E81F-D4C268F125A1" referredColumn="9417FEAF-ADD2-F5CD-D683-611EE7FBC7F3"/>
+</associations>
+</Column>
+<Column name="class_start_date_time" id="30128F0F-9BF5-6063-2F70-E14201EA7C4D">
+<createdBy>mabo0003</createdBy>
+<createdTime>2021-09-14 13:37:30 UTC</createdTime>
+<commentInRDBMS><![CDATA[starrt date and time of class]]></commentInRDBMS>
+<generatorID>9C90802B-9F1F-7762-8691-EF4E7A3A3D43</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0F26C11B-217D-903A-E81F-D4C268F125A1" referredColumn="A94F3CEF-0BB0-2F97-3896-6F86D711F574"/>
+</associations>
+</Column>
+<Column name="member_id" id="F9EF8D3B-6AA9-E009-0A4E-0665925EA33C">
+<createdBy>mabo0003</createdBy>
+<createdTime>2021-09-14 13:37:30 UTC</createdTime>
+<commentInRDBMS><![CDATA[member ID]]></commentInRDBMS>
+<generatorID>C27F80F1-C0CE-C613-2AB6-89001E909B95</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="43923DEB-12E1-D4C7-A29F-BD89CCB3A2D3" referredColumn="5BEAFB56-99EE-961F-EF1F-7EB002F4B220"/>
+</associations>
+</Column>
+<Column name="sessioin_date" id="7EDE5680-FE83-F3B2-F34B-A21DC3914725">
+<createdBy>mabo0003</createdBy>
+<createdTime>2021-09-14 13:37:30 UTC</createdTime>
+<commentInRDBMS><![CDATA[Date of session]]></commentInRDBMS>
+<generatorID>DA9BFC7D-0AE2-790D-627F-25EE9F75F7BE</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="total_attendance" id="67A3CA48-F125-E639-6261-05CBEEDBDD1D">
+<createdBy>mabo0003</createdBy>
+<createdTime>2021-09-14 13:37:30 UTC</createdTime>
+<commentInRDBMS><![CDATA[total attendance of this member for this class]]></commentInRDBMS>
+<generatorID>2553ED0E-4EB9-F796-859C-D35768C0BD3B</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5034F4DF-13B2-768C-2466-F9C7A518118D" name="Attendance_PK">
+<createdBy>mabo0003</createdBy>
+<createdTime>2021-09-14 13:37:30 UTC</createdTime>
+<generatorID>F649341D-1EAD-0722-D2B2-33C452738017</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6DD7694C-C1E0-D46B-0458-588674DE28D7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="709E06E0-FEA3-3323-8767-CC350CD5059C" name="Attendance_NK">
+<createdBy>mabo0003</createdBy>
+<createdTime>2021-09-14 13:37:30 UTC</createdTime>
+<generatorID>F65F93DC-9DF2-84E9-105C-910971D606D1</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="715E6D41-279B-174C-33E0-28A40BB05274"/>
+<colUsage columnID="8EF68679-E236-A00B-3737-478DD121CCE1"/>
+<colUsage columnID="30128F0F-9BF5-6063-2F70-E14201EA7C4D"/>
+<colUsage columnID="F9EF8D3B-6AA9-E009-0A4E-0665925EA33C"/>
+<colUsage columnID="7EDE5680-FE83-F3B2-F34B-A21DC3914725"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A5BB2D85-8AAC-EF51-F40F-A24E6F6C22D3" name="CLASS_ATTENDANCE">
+<createdBy>mabo0003</createdBy>
+<createdTime>2021-09-14 13:37:30 UTC</createdTime>
+<generatorID>EE3735A8-77C5-CAB9-8129-9BFAC7A10CAD</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="715E6D41-279B-174C-33E0-28A40BB05274"/>
+<colUsage columnID="8EF68679-E236-A00B-3737-478DD121CCE1"/>
+<colUsage columnID="30128F0F-9BF5-6063-2F70-E14201EA7C4D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5D1DFF91-24C3-18C5-12CF-67A7D36403F8" name="MEMBER_ATTENDANCE">
+<createdBy>mabo0003</createdBy>
+<createdTime>2021-09-14 13:37:30 UTC</createdTime>
+<generatorID>3EC58B97-B744-ABC5-A7EE-B618E1A52824</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F9EF8D3B-6AA9-E009-0A4E-0665925EA33C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

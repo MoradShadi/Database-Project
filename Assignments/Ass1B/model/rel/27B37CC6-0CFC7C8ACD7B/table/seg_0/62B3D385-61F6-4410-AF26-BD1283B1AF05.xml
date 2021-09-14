@@ -1,0 +1,167 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="62B3D385-61F6-4410-AF26-BD1283B1AF05" name="Staff">
+<createdBy>mabo0003</createdBy>
+<createdTime>2021-09-14 13:37:30 UTC</createdTime>
+<generatorID>82725F10-028F-E74D-02CB-D703D0C467FC</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="staff_id" id="FE9197C6-EA0A-D27F-FC9F-2BCDF5159741">
+<createdBy>mabo0003</createdBy>
+<createdTime>2021-09-14 13:37:30 UTC</createdTime>
+<commentInRDBMS><![CDATA[staff ID]]></commentInRDBMS>
+<generatorID>AEF714FA-C802-7C20-5908-E2FE63471BF5</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="staff_fname" id="19FADCFB-107F-3E39-DA48-00086E23D351">
+<createdBy>mabo0003</createdBy>
+<createdTime>2021-09-14 13:37:30 UTC</createdTime>
+<commentInRDBMS><![CDATA[first name]]></commentInRDBMS>
+<generatorID>049AE4D5-E3C0-9E42-464E-E38081C3040B</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="staff_lname" id="C31AA31A-0A4A-DFE7-4D94-B0922B7411D8">
+<createdBy>mabo0003</createdBy>
+<createdTime>2021-09-14 13:37:30 UTC</createdTime>
+<commentInRDBMS><![CDATA[last name]]></commentInRDBMS>
+<generatorID>1AB9630B-F5C5-71E0-EA7E-57B86BED2DAD</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="staff_phone" id="1AB2EFC5-C006-6EBB-37D4-DC29999D94D4">
+<createdBy>mabo0003</createdBy>
+<createdTime>2021-09-14 13:37:30 UTC</createdTime>
+<commentInRDBMS><![CDATA[phone number]]></commentInRDBMS>
+<generatorID>37A54199-42D9-91BA-D273-F3AC3D241BE4</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="staff_startdate" id="A58F3473-E8AA-D5F5-9C11-091DE78004E0">
+<createdBy>mabo0003</createdBy>
+<createdTime>2021-09-14 13:37:30 UTC</createdTime>
+<commentInRDBMS><![CDATA[start date]]></commentInRDBMS>
+<generatorID>9CB80AEE-850F-2DA5-B337-64B79B3680DF</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="first_aid_certified" id="BEB4C79D-A4DB-6CD7-623F-FC4A4F644705">
+<createdBy>mabo0003</createdBy>
+<createdTime>2021-09-14 13:37:30 UTC</createdTime>
+<commentInRDBMS><![CDATA[is the staff member first aid certified?]]></commentInRDBMS>
+<generatorID>350FE4C0-88DC-12AF-5CC5-73AB7F16294F</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<constraintName>chk_first_aid</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<listOfValues>
+<valueDef value="N" description="No"/>
+<valueDef value="Y" description="Yes"/>
+</listOfValues>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="centre_id" id="DD448ABD-668F-BE33-F3E1-1BEC59481B72">
+<createdBy>mabo0003</createdBy>
+<createdTime>2021-09-14 13:37:30 UTC</createdTime>
+<commentInRDBMS><![CDATA[Centre ID]]></commentInRDBMS>
+<generatorID>5FA00689-4136-0507-0EFB-9689ACCB9965</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeSize>3</dataTypeSize>
+<ownDataTypeParameters>3,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9B0E4E5B-1786-51AD-684D-690A909C3BE4" referredColumn="C776DBAB-C975-C567-EAB1-01E878C6AA56"/>
+</associations>
+</Column>
+<Column name="role_id" id="4E64ABD1-2048-A8F6-F306-2C337ED9A967">
+<createdBy>mabo0003</createdBy>
+<createdTime>2021-09-14 13:37:30 UTC</createdTime>
+<commentInRDBMS><![CDATA[role ID]]></commentInRDBMS>
+<generatorID>D8D16D48-0EC4-B0B9-6065-3C0E12A72E8E</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="613E63A3-4ED0-91C9-9073-FA247C5126F4" referredColumn="4B560CA0-DA22-C00D-8474-87B50478F4B6"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="ADF5186A-F089-A5FC-ADC6-AC8775E954C0" name="Staff_PK">
+<createdBy>mabo0003</createdBy>
+<createdTime>2021-09-14 13:37:30 UTC</createdTime>
+<generatorID>CC300247-3728-84DF-B914-668DEC1CC9E9</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FE9197C6-EA0A-D27F-FC9F-2BCDF5159741"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E2F93630-D608-071B-FD11-996BDD918066" name="CENTRE_STAFF">
+<createdBy>mabo0003</createdBy>
+<createdTime>2021-09-14 13:37:30 UTC</createdTime>
+<generatorID>9322F491-477D-DE68-221B-541CD8996487</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DD448ABD-668F-BE33-F3E1-1BEC59481B72"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BBF7AAD0-A8AC-15A4-01D1-FAF7A06801EA" name="ROLE_STAFF">
+<createdBy>mabo0003</createdBy>
+<createdTime>2021-09-14 13:37:30 UTC</createdTime>
+<generatorID>771C34F9-BFDF-D6B4-EA95-3D2243C1A16F</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4E64ABD1-2048-A8F6-F306-2C337ED9A967"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

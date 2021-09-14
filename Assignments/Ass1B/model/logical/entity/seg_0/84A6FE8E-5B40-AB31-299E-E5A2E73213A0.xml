@@ -43,7 +43,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>4</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="class_numb" id="649EBFDB-F9F8-705A-0660-7F4DFC259399">
 <createdBy>mabo0003</createdBy>
@@ -59,7 +59,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>3</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="centre_id" id="B2D1C0A2-A4C9-33DE-5CC5-73D34FEA16F7">
 <createdBy>mabo0003</createdBy>
@@ -73,9 +73,10 @@
 <referedAttribute>54897D8A-6743-09E8-3F88-80756E4A1FD4</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
 <dataTypeSize>3</dataTypeSize>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>3,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="class_start_date_time" id="3894074A-286F-1E06-5FCE-51BD03156F60">
 <createdBy>mabo0003</createdBy>
@@ -111,8 +112,9 @@
 <createdBy>mabo0003</createdBy>
 <createdTime>2021-09-12 21:08:00 UTC</createdTime>
 <ownerDesignName>model</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="27B37CC6-12AB-79BB-C011-0CFC7C8ACD7B" value="true"/>
+<item key="27B37CC6-12AB-79BB-C011-0CFC7C8ACD7B" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
@@ -123,8 +125,9 @@
 <createdBy>mabo0003</createdBy>
 <createdTime>2021-09-13 14:28:50 UTC</createdTime>
 <ownerDesignName>model</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="27B37CC6-12AB-79BB-C011-0CFC7C8ACD7B" value="true"/>
+<item key="27B37CC6-12AB-79BB-C011-0CFC7C8ACD7B" value="false"/>
 </engineerTo>
 <newElementsIDs>BA29AB62-76B4-3DCF-C59A-1AC4584BBC16,649EBFDB-F9F8-705A-0660-7F4DFC259399,B2D1C0A2-A4C9-33DE-5CC5-73D34FEA16F7,3894074A-286F-1E06-5FCE-51BD03156F60,46670891-BDFF-B0AE-BB69-EBCA863D4A1D</newElementsIDs>
 <usedAttributes>

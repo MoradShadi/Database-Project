@@ -43,7 +43,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>3</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="centre_id" id="F573ECE3-8B73-9669-278D-AF6AE5343618">
 <createdBy>mabo0003</createdBy>
@@ -57,9 +57,10 @@
 <referedAttribute>54897D8A-6743-09E8-3F88-80756E4A1FD4</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
 <dataTypeSize>3</dataTypeSize>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>3,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="class_start_date_time" id="9C90802B-9F1F-7762-8691-EF4E7A3A3D43">
 <createdBy>mabo0003</createdBy>
@@ -90,7 +91,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>4</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="sessioin_date" id="DA9BFC7D-0AE2-790D-627F-25EE9F75F7BE">
 <createdBy>mabo0003</createdBy>
@@ -125,8 +126,9 @@
 <createdBy>mabo0003</createdBy>
 <createdTime>2021-09-12 21:10:14 UTC</createdTime>
 <ownerDesignName>model</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="27B37CC6-12AB-79BB-C011-0CFC7C8ACD7B" value="true"/>
+<item key="27B37CC6-12AB-79BB-C011-0CFC7C8ACD7B" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
@@ -137,8 +139,9 @@
 <createdBy>mabo0003</createdBy>
 <createdTime>2021-09-13 14:32:38 UTC</createdTime>
 <ownerDesignName>model</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="27B37CC6-12AB-79BB-C011-0CFC7C8ACD7B" value="true"/>
+<item key="27B37CC6-12AB-79BB-C011-0CFC7C8ACD7B" value="false"/>
 </engineerTo>
 <newElementsIDs>5607AA9D-F9CA-8679-211C-2A6C322A722C,F573ECE3-8B73-9669-278D-AF6AE5343618,9C90802B-9F1F-7762-8691-EF4E7A3A3D43,C27F80F1-C0CE-C613-2AB6-89001E909B95,DA9BFC7D-0AE2-790D-627F-25EE9F75F7BE</newElementsIDs>
 <usedAttributes>

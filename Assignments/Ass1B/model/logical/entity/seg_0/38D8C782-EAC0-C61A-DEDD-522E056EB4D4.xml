@@ -43,7 +43,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>3</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="class_numb" id="A3F10B71-151A-0C42-20EC-528F1D71A1CF">
 <createdBy>mabo0003</createdBy>
@@ -59,7 +59,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>3</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="centre_id" id="324BE0EF-716A-E00F-CF0B-C4008B7850CD">
 <createdBy>mabo0003</createdBy>
@@ -73,9 +73,10 @@
 <referedAttribute>54897D8A-6743-09E8-3F88-80756E4A1FD4</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
 <dataTypeSize>3</dataTypeSize>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>3,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="class_start_date_time" id="BFAE5F38-63D1-07AD-19B5-EBBA318258D9">
 <createdBy>mabo0003</createdBy>
@@ -112,8 +113,9 @@
 <createdBy>mabo0003</createdBy>
 <createdTime>2021-09-12 21:20:07 UTC</createdTime>
 <ownerDesignName>model</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="27B37CC6-12AB-79BB-C011-0CFC7C8ACD7B" value="true"/>
+<item key="27B37CC6-12AB-79BB-C011-0CFC7C8ACD7B" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
@@ -124,8 +126,9 @@
 <createdBy>mabo0003</createdBy>
 <createdTime>2021-09-13 14:36:52 UTC</createdTime>
 <ownerDesignName>model</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="27B37CC6-12AB-79BB-C011-0CFC7C8ACD7B" value="true"/>
+<item key="27B37CC6-12AB-79BB-C011-0CFC7C8ACD7B" value="false"/>
 </engineerTo>
 <newElementsIDs>AE688945-4A66-DA92-16AE-833C6554B373,A3F10B71-151A-0C42-20EC-528F1D71A1CF,324BE0EF-716A-E00F-CF0B-C4008B7850CD,BFAE5F38-63D1-07AD-19B5-EBBA318258D9</newElementsIDs>
 <usedAttributes>

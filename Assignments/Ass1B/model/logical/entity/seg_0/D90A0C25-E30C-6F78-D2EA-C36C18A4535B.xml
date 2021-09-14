@@ -41,7 +41,8 @@
 <referedAttribute>D7A4BA2A-A7EF-14EC-1249-9153AB9858FF</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
 <dataTypeSize>3</dataTypeSize>
 <ownDataTypeParameters>3,,</ownDataTypeParameters>
 </Attribute>
@@ -160,8 +161,9 @@
 <createdBy>mabo0003</createdBy>
 <createdTime>2021-09-12 21:00:58 UTC</createdTime>
 <ownerDesignName>model</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="27B37CC6-12AB-79BB-C011-0CFC7C8ACD7B" value="true"/>
+<item key="27B37CC6-12AB-79BB-C011-0CFC7C8ACD7B" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

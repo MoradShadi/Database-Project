@@ -1,0 +1,157 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CEC70390-B502-8889-63EF-74C3CB79A542" name="Class_Staffing">
+<createdBy>mabo0003</createdBy>
+<createdTime>2021-09-14 13:37:30 UTC</createdTime>
+<generatorID>38D8C782-EAC0-C61A-DEDD-522E056EB4D4</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="class_staffing_no" id="8DEB439F-8F5F-08B8-8A9B-060DA86B2032">
+<createdBy>mabo0003</createdBy>
+<createdTime>2021-09-14 13:37:30 UTC</createdTime>
+<commentInRDBMS><![CDATA[surrogate key]]></commentInRDBMS>
+<generatorID>6021ACFC-5EA1-F075-6D5A-EBF0E1454247</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="staff_id" id="686B7D5D-730A-7940-919D-D3A8B852C0E8">
+<createdBy>mabo0003</createdBy>
+<createdTime>2021-09-14 13:37:30 UTC</createdTime>
+<commentInRDBMS><![CDATA[staff ID]]></commentInRDBMS>
+<generatorID>AE688945-4A66-DA92-16AE-833C6554B373</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3671509B-52EE-F3E3-22CF-828F6CA12CDC" referredColumn="FE9197C6-EA0A-D27F-FC9F-2BCDF5159741"/>
+</associations>
+</Column>
+<Column name="class_numb" id="4CD5C70A-D70B-5695-F2EA-241D7DF347A9">
+<createdBy>mabo0003</createdBy>
+<createdTime>2021-09-14 13:37:30 UTC</createdTime>
+<commentInRDBMS><![CDATA[class number]]></commentInRDBMS>
+<generatorID>A3F10B71-151A-0C42-20EC-528F1D71A1CF</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0D878F7A-725A-079F-B245-3DD01C82C346" referredColumn="00003777-6D0B-7253-255F-D3D3CE3F0F68"/>
+</associations>
+</Column>
+<Column name="centre_id" id="2D4BB09D-DA9E-1019-520A-1AA03C2271DC">
+<createdBy>mabo0003</createdBy>
+<createdTime>2021-09-14 13:37:30 UTC</createdTime>
+<commentInRDBMS><![CDATA[Centre ID]]></commentInRDBMS>
+<generatorID>324BE0EF-716A-E00F-CF0B-C4008B7850CD</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0D878F7A-725A-079F-B245-3DD01C82C346" referredColumn="9417FEAF-ADD2-F5CD-D683-611EE7FBC7F3"/>
+</associations>
+</Column>
+<Column name="class_start_date_time" id="E1951D63-C211-E919-BEC3-CD28A1B0465B">
+<createdBy>mabo0003</createdBy>
+<createdTime>2021-09-14 13:37:30 UTC</createdTime>
+<commentInRDBMS><![CDATA[starrt date and time of class]]></commentInRDBMS>
+<generatorID>BFAE5F38-63D1-07AD-19B5-EBBA318258D9</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0D878F7A-725A-079F-B245-3DD01C82C346" referredColumn="A94F3CEF-0BB0-2F97-3896-6F86D711F574"/>
+</associations>
+</Column>
+<Column name="class_leader" id="2F08A254-72C7-BE2C-3376-A86EB0B31CD5">
+<createdBy>mabo0003</createdBy>
+<createdTime>2021-09-14 13:37:30 UTC</createdTime>
+<commentInRDBMS><![CDATA[is this staff member the class leader]]></commentInRDBMS>
+<generatorID>091F5FCC-33B3-A646-1AF1-0E025A1840ED</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="10BBC082-44E2-9DFB-C574-B0852A9E4482" name="Classs_Staffing_PK">
+<createdBy>mabo0003</createdBy>
+<createdTime>2021-09-14 13:37:30 UTC</createdTime>
+<generatorID>68E32214-5935-1CA8-3A3D-A87A7190A232</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8DEB439F-8F5F-08B8-8A9B-060DA86B2032"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="295F629B-4740-3AEF-B582-3644D634CE5C" name="class_staffing_NK">
+<createdBy>mabo0003</createdBy>
+<createdTime>2021-09-14 13:37:30 UTC</createdTime>
+<generatorID>7D7FD82D-357B-234E-1501-F04C40617538</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="686B7D5D-730A-7940-919D-D3A8B852C0E8"/>
+<colUsage columnID="4CD5C70A-D70B-5695-F2EA-241D7DF347A9"/>
+<colUsage columnID="2D4BB09D-DA9E-1019-520A-1AA03C2271DC"/>
+<colUsage columnID="E1951D63-C211-E919-BEC3-CD28A1B0465B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7AE47053-C745-4406-6DC4-5E627ADBF26D" name="CLASS_CLASSSTAFFING">
+<createdBy>mabo0003</createdBy>
+<createdTime>2021-09-14 13:37:30 UTC</createdTime>
+<generatorID>4F655428-96CF-53DC-8BC8-3D27C654FC34</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4CD5C70A-D70B-5695-F2EA-241D7DF347A9"/>
+<colUsage columnID="2D4BB09D-DA9E-1019-520A-1AA03C2271DC"/>
+<colUsage columnID="E1951D63-C211-E919-BEC3-CD28A1B0465B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E2BFB80C-11FB-ADC8-E4F6-B4DF83029D37" name="STAFF_CLASSSTAFFING">
+<createdBy>mabo0003</createdBy>
+<createdTime>2021-09-14 13:37:30 UTC</createdTime>
+<generatorID>F701338B-1FE7-587B-1798-DF3EADB4F304</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="686B7D5D-730A-7940-919D-D3A8B852C0E8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,148 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="61BABB19-4F2D-6008-3058-889475B6CA6D" name="Assessments">
+<createdBy>mabo0003</createdBy>
+<createdTime>2021-09-14 13:37:30 UTC</createdTime>
+<generatorID>CAAC6CAF-BBDD-200F-D313-1DCC7820BC2B</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="member_id" id="B34CA3A5-D429-0AD3-459B-08C3F40802FA">
+<createdBy>mabo0003</createdBy>
+<createdTime>2021-09-14 13:37:30 UTC</createdTime>
+<commentInRDBMS><![CDATA[member ID]]></commentInRDBMS>
+<generatorID>1C9DFA73-C6CB-C5AE-218B-D913C8CF2AD3</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F9554A12-2EF4-8A53-388A-440BDC8FD07B" referredColumn="5BEAFB56-99EE-961F-EF1F-7EB002F4B220"/>
+</associations>
+</Column>
+<Column name="assessment_date" id="D60BD70A-9293-C382-2CA4-2FA99EDB550C">
+<createdBy>mabo0003</createdBy>
+<createdTime>2021-09-14 13:37:30 UTC</createdTime>
+<commentInRDBMS><![CDATA[date of assessment]]></commentInRDBMS>
+<generatorID>B988B636-E7E5-B864-7FFC-EF1480A20827</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="member_weight" id="08E2022D-7DD6-59C0-ACE5-FF42DF9DBB1A">
+<createdBy>mabo0003</createdBy>
+<createdTime>2021-09-14 13:37:30 UTC</createdTime>
+<commentInRDBMS><![CDATA[weight of member]]></commentInRDBMS>
+<generatorID>5777E41A-C62E-A24C-483A-C4A62D980A47</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="member_bloodpressure" id="07FB79BE-26D7-6CD3-0C52-AA16D5390B92">
+<createdBy>mabo0003</createdBy>
+<createdTime>2021-09-14 13:37:30 UTC</createdTime>
+<commentInRDBMS><![CDATA[blood prressure reading]]></commentInRDBMS>
+<generatorID>6D2ACFAC-B3B0-2B31-4EE6-62738665C15E</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>6</dataTypeSize>
+<ownDataTypeParameters>6,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="member_BMI" id="7217A50F-4040-55E6-96B2-1112C7D92BE6">
+<createdBy>mabo0003</createdBy>
+<createdTime>2021-09-14 13:37:30 UTC</createdTime>
+<commentInRDBMS><![CDATA[BMI]]></commentInRDBMS>
+<generatorID>0B34F2B5-2B2D-0C4F-AD46-9C2D12096E40</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>1</dataTypeScale>
+<ownDataTypeParameters>,3,1</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="memberr_VO2Max" id="AA1169AA-9173-05F1-B275-4F69B445797A">
+<createdBy>mabo0003</createdBy>
+<createdTime>2021-09-14 13:37:30 UTC</createdTime>
+<commentInRDBMS><![CDATA[VO2Max reading]]></commentInRDBMS>
+<generatorID>B336CF40-D37B-91C0-F648-6B8B6D28BE6D</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<ownDataTypeParameters>3,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="staff_id" id="857AEC29-8285-3757-8872-90BD6ACF6C89">
+<createdBy>mabo0003</createdBy>
+<createdTime>2021-09-14 13:37:30 UTC</createdTime>
+<commentInRDBMS><![CDATA[staff ID]]></commentInRDBMS>
+<generatorID>FE2CC9BC-90AC-D269-5CCA-95C977561C70</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0AAC8ED0-D104-C908-1A4A-C847BA6369A7" referredColumn="FE9197C6-EA0A-D27F-FC9F-2BCDF5159741"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="23BD355C-02F9-40D2-2CEE-D66A452B7D4F" name="Assessments_PK">
+<createdBy>mabo0003</createdBy>
+<createdTime>2021-09-14 13:37:30 UTC</createdTime>
+<generatorID>0947EE89-222B-5300-865C-CB8F462A0889</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D60BD70A-9293-C382-2CA4-2FA99EDB550C"/>
+<colUsage columnID="B34CA3A5-D429-0AD3-459B-08C3F40802FA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B7D999A0-CC5E-ECEF-AC55-8F0711AEED04" name="MEMBER_ASSESSMENT">
+<createdBy>mabo0003</createdBy>
+<createdTime>2021-09-14 13:37:30 UTC</createdTime>
+<generatorID>AC7DDD2E-4945-64F8-4D58-FF23E76666B3</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B34CA3A5-D429-0AD3-459B-08C3F40802FA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4AAEF4B9-A87E-FB80-A0E5-B52175E17D05" name="STAFF_ASSESSMENT">
+<createdBy>mabo0003</createdBy>
+<createdTime>2021-09-14 13:37:30 UTC</createdTime>
+<generatorID>CD62CEEC-504A-F939-4C4A-456B9C2204BA</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="857AEC29-8285-3757-8872-90BD6ACF6C89"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

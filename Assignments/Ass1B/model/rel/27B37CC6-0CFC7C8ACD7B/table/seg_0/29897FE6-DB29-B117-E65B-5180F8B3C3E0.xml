@@ -1,0 +1,187 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="29897FE6-DB29-B117-E65B-5180F8B3C3E0" name="Class">
+<createdBy>mabo0003</createdBy>
+<createdTime>2021-09-14 13:37:30 UTC</createdTime>
+<generatorID>D90A0C25-E30C-6F78-D2EA-C36C18A4535B</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="class_numb" id="00003777-6D0B-7253-255F-D3D3CE3F0F68">
+<createdBy>mabo0003</createdBy>
+<createdTime>2021-09-14 13:37:30 UTC</createdTime>
+<commentInRDBMS><![CDATA[class number]]></commentInRDBMS>
+<generatorID>0DCA3F05-9729-0DB7-2009-8545E57E9F41</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="centre_id" id="9417FEAF-ADD2-F5CD-D683-611EE7FBC7F3">
+<createdBy>mabo0003</createdBy>
+<createdTime>2021-09-14 13:37:30 UTC</createdTime>
+<commentInRDBMS><![CDATA[Centre ID]]></commentInRDBMS>
+<generatorID>54897D8A-6743-09E8-3F88-80756E4A1FD4</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2D641B37-D635-A0EA-8A8C-81E1C9DA64FB" referredColumn="E809AEC9-130E-D40D-ADCF-A9AACD168C45"/>
+</associations>
+</Column>
+<Column name="class_start_date_time" id="A94F3CEF-0BB0-2F97-3896-6F86D711F574">
+<createdBy>mabo0003</createdBy>
+<createdTime>2021-09-14 13:37:30 UTC</createdTime>
+<commentInRDBMS><![CDATA[starrt date and time of class]]></commentInRDBMS>
+<generatorID>3AE0A4C4-8149-B460-DF3C-EE19D438A924</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="class_max_participants" id="C984886C-81B2-175A-660B-B624A81A7CD8">
+<createdBy>mabo0003</createdBy>
+<createdTime>2021-09-14 13:37:30 UTC</createdTime>
+<commentInRDBMS><![CDATA[max participants]]></commentInRDBMS>
+<generatorID>2AB50A9C-3473-1176-9826-5808E4EADCC3</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="class_sessions" id="70635E03-00BF-3345-9A1F-758833D3389C">
+<createdBy>mabo0003</createdBy>
+<createdTime>2021-09-14 13:37:30 UTC</createdTime>
+<commentInRDBMS><![CDATA[total number of sessions]]></commentInRDBMS>
+<generatorID>9DB0CD02-EDEB-14E1-6F60-40108697E847</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="class_cost" id="06A8FC35-E0DE-4E65-EED4-30C776728E8C">
+<createdBy>mabo0003</createdBy>
+<createdTime>2021-09-14 13:37:30 UTC</createdTime>
+<commentInRDBMS><![CDATA[cost of class]]></commentInRDBMS>
+<generatorID>15DC8E7D-6F1D-1FE5-B1E0-091317EF5158</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,5,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="class_type" id="5990AC83-1BA1-83B9-FC87-B16ED697A0CB">
+<createdBy>mabo0003</createdBy>
+<createdTime>2021-09-14 13:37:30 UTC</createdTime>
+<commentInRDBMS><![CDATA[type of class]]></commentInRDBMS>
+<generatorID>F3067493-A6AA-BCC9-712F-B23267EAB8F8</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>8</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D1A87794-7D45-F0C8-40DB-5CA948773574" referredColumn="B333DD63-DA4B-5C3D-56D8-7EE4001BC57D"/>
+</associations>
+</Column>
+<Column name="facility_room_numb" id="B8D0D962-EE36-A862-FE4F-38B8CA469D91">
+<createdBy>mabo0003</createdBy>
+<createdTime>2021-09-14 13:37:30 UTC</createdTime>
+<commentInRDBMS><![CDATA[room number]]></commentInRDBMS>
+<generatorID>C588C065-CBEF-DB81-AE37-80D3F0750FBA</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2D641B37-D635-A0EA-8A8C-81E1C9DA64FB" referredColumn="34BFAE2E-B1C8-6041-A6AF-DE46E5C00128"/>
+</associations>
+</Column>
+<Column name="class_gender_restrictions" id="9E6CFFBA-1F4E-431F-C23D-77ED1ABA28F8">
+<createdBy>mabo0003</createdBy>
+<createdTime>2021-09-14 13:37:30 UTC</createdTime>
+<commentInRDBMS><![CDATA[does the class have any gender restrictions?]]></commentInRDBMS>
+<generatorID>78C9D9B7-FCC1-C4CC-58E5-863AD6116903</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<constraintName>chk_gender</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<listOfValues>
+<valueDef value="-" description="No restriction"/>
+<valueDef value="F" description="Female only"/>
+<valueDef value="M" description="Male only"/>
+</listOfValues>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4D404CF6-B819-202A-BE85-FB67E97EA1A3" name="Class_PK">
+<createdBy>mabo0003</createdBy>
+<createdTime>2021-09-14 13:37:30 UTC</createdTime>
+<generatorID>9FC0529D-6460-EB3D-CD09-8051A710878D</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="00003777-6D0B-7253-255F-D3D3CE3F0F68"/>
+<colUsage columnID="9417FEAF-ADD2-F5CD-D683-611EE7FBC7F3"/>
+<colUsage columnID="A94F3CEF-0BB0-2F97-3896-6F86D711F574"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CA4A5A68-5F7A-3495-104F-437B021DA1FB" name="FACILITY_CLASS">
+<createdBy>mabo0003</createdBy>
+<createdTime>2021-09-14 13:37:30 UTC</createdTime>
+<generatorID>AD16D2F3-330A-E8A0-9F1C-A4C535ADBC15</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B8D0D962-EE36-A862-FE4F-38B8CA469D91"/>
+<colUsage columnID="9417FEAF-ADD2-F5CD-D683-611EE7FBC7F3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5DF98A97-91C7-F836-96C1-6DBD9F14C890" name="TYPE_CLASS">
+<createdBy>mabo0003</createdBy>
+<createdTime>2021-09-14 13:37:30 UTC</createdTime>
+<generatorID>4B050175-726C-1312-D78E-5EF0EEE7FA78</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5990AC83-1BA1-83B9-FC87-B16ED697A0CB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
