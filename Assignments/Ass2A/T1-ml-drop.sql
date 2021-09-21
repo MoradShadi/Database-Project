@@ -1,9 +1,9 @@
 --****PLEASE ENTER YOUR DETAILS BELOW****
 --T1-ml-drop.sql
 
---Student ID:
---Student Name:
---Tutorial No:
+--Student ID: 29799260
+--Student Name: Morad Abou Shadi
+--Tutorial No: FIT3171 tut 2
 
 /* Comments for your marker:
 
@@ -17,5 +17,16 @@
 --      DROP TABLE tblname PURGE
 -- syntax DO NOT use CASCADE CONSTRAINTS
 
+DROP TABLE loan PURGE;
 
+DROP TABLE reserve PURGE;
 
+DROP TABLE book_copy PURGE;
+
+DROP TABLE book_detail PURGE;
+
+DROP TABLE borrower PURGE;
+
+DROP TABLE branch PURGE;
+
+DROP TABLE manager PURGE;
