@@ -34,6 +34,8 @@ COMMENT ON COLUMN book_copy.bc_purchase_price IS
 COMMENT ON COLUMN book_copy.bc_counter_reserve IS
     'Reserved for the library?';
     
+ALTER TABLE book_copy ADD CONSTRAINT book_copy_pk PRIMARY KEY ( bc_id );
+
 
 -- LOAN
 CREATE TABLE loan (
@@ -54,7 +56,8 @@ COMMENT ON COLUMN loan.loan_due_time IS
 COMMENT ON COLUMN loan.loan_actual_return_date IS
     'Date and time the book actually got returned';
     
-    
+ALTER TABLE loan ADD CONSTRAINT loan_pk PRIMARY KEY ( loan_date_time );
+
 -- RESERVE
 CREATE TABLE reserve (
     reserve_id          NUMBER(6) NOT NULL,
@@ -70,7 +73,22 @@ COMMENT ON COLUMN reserve.reserve_id IS
 COMMENT ON COLUMN reserve.reserve_date_time_placed IS
     'date and time on which the reservation was placed';
 
+ALTER TABLE reserve ADD CONSTRAINT reserve_pk PRIMARY KEY ( reserve_id );
+
+ALTER TABLE reserve ADD CONSTRAINT reserve_date_time_uq UNIQUE ( reserve_date_time_placed );
+
+
 -- Add all missing FK Constraints below here
 
-
+ALTER TABLE book_copy
+    ADD CONSTRAINT bookdet_bookcopy FOREIGN KEY ( book_call_no )
+        REFERENCES book_detail ( book_call_no );
+        
+ALTER TABLE reserve
+    ADD CONSTRAINT borrower_reserve FOREIGN KEY ( bor_no )
+        REFERENCES burrower ( bor_no );
+        
+ALTER TABLE loan
+    ADD CONSTRAINT borrower_loan FOREIGN KEY ( bor_no )
+        REFERENCES borrower ( bor_no );
 
