@@ -50,7 +50,7 @@ CREATE TABLE loan (
 COMMENT ON COLUMN loan.loan_date_time IS
     'Date and time the book went out on loan';
     
-COMMENT ON COLUMN loan.loan_due_time IS
+COMMENT ON COLUMN loan.loan_due_date IS
     'Date and time the book is due for return';
 
 COMMENT ON COLUMN loan.loan_actual_return_date IS
@@ -90,7 +90,7 @@ ALTER TABLE book_copy
         
 ALTER TABLE reserve
     ADD CONSTRAINT borrower_reserve FOREIGN KEY ( bor_no )
-        REFERENCES burrower ( bor_no );
+        REFERENCES borrower ( bor_no );
 
 ALTER TABLE reserve
     ADD CONSTRAINT bookcopy_reserve FOREIGN KEY ( branch_code, bc_id )
