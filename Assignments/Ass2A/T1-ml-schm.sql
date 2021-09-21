@@ -25,6 +25,15 @@ CREATE TABLE book_copy (
     book_call_no VARCHAR2(20) NOT NULL
 );
 
+COMMENT ON COLUMN book_copy.bc_id IS
+    'Book copy identifier';
+
+COMMENT ON COLUMN book_copy.bc_purchase_price IS
+    'Price of book';
+    
+COMMENT ON COLUMN book_copy.bc_counter_reserve IS
+    'Reserved for the library?';
+    
 
 -- LOAN
 CREATE TABLE loan (
@@ -36,6 +45,16 @@ CREATE TABLE loan (
     bor_no NUMBER(6) NOT NULL
 );
 
+COMMENT ON COLUMN loan.loan_date_time IS
+    'Date and time the book went out on loan';
+    
+COMMENT ON COLUMN loan.loan_due_time IS
+    'Date and time the book is due for return';
+
+COMMENT ON COLUMN loan.loan_actual_return_date IS
+    'Date and time the book actually got returned';
+    
+    
 -- RESERVE
 CREATE TABLE reserve (
     reserve_id          NUMBER(6) NOT NULL,
@@ -44,6 +63,12 @@ CREATE TABLE reserve (
     reserve_date_time_placed      DATE NOT NULL,
     bor_no NUMBER(6) NOT NULL
 );
+
+COMMENT ON COLUMN reserve.reserve_id IS
+    'Reserve identifier';
+    
+COMMENT ON COLUMN reserve.reserve_date_time_placed IS
+    'date and time on which the reservation was placed';
 
 -- Add all missing FK Constraints below here
 
