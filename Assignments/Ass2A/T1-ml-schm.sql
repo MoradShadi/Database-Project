@@ -34,6 +34,9 @@ COMMENT ON COLUMN book_copy.bc_purchase_price IS
 COMMENT ON COLUMN book_copy.bc_counter_reserve IS
     'Reserved for the library?';
     
+ALTER TABLE book_copy
+    ADD CONSTRAINT bc_counte_reserve_chk CHECK ( bc_counter_reserve IN ( 'Y', 'N' ) );
+
 ALTER TABLE book_copy ADD CONSTRAINT book_copy_pk PRIMARY KEY ( branch_code, bc_id );
 
 
@@ -51,10 +54,10 @@ COMMENT ON COLUMN loan.loan_date_time IS
     'Date and time the book went out on loan';
     
 COMMENT ON COLUMN loan.loan_due_date IS
-    'Date and time the book is due for return';
+    'Date the book is due for return';
 
 COMMENT ON COLUMN loan.loan_actual_return_date IS
-    'Date and time the book actually got returned';
+    'Date the book actually got returned';
     
 ALTER TABLE loan ADD CONSTRAINT loan_pk PRIMARY KEY ( branch_code, bc_id, loan_date_time );
 
