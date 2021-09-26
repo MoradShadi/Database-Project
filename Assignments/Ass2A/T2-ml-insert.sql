@@ -205,7 +205,7 @@ INSERT INTO reserve VALUES (
     13,
     3,
     TO_DATE('2021-08-25 20:32:06', 'YYYY-MM-DD HH24:MI:SS'),
-    5
+    3
 );
 
 INSERT INTO reserve VALUES (
@@ -213,7 +213,7 @@ INSERT INTO reserve VALUES (
     11,
     2,
     TO_DATE('2021-08-30 06:12:46', 'YYYY-MM-DD HH24:MI:SS'),
-    3
+    5
 );
 
 commit;
