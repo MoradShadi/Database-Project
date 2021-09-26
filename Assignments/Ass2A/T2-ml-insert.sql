@@ -215,3 +215,5 @@ INSERT INTO reserve VALUES (
     TO_DATE('2021-08-30 06:12:46', 'YYYY-MM-DD HH24:MI:SS'),
     3
 );
+
+commit;
