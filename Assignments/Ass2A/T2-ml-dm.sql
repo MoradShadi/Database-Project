@@ -89,8 +89,13 @@ INSERT INTO book_copy VALUES (
 
 -- 2 (b) (ii)
 
+DROP SEQUENCE borrower_seq;
 
+CREATE SEQUENCE borrower_seq START WITH 100 INCREMENT BY 1;
 
+DROP SEQUENCE reserve_seq;
+
+CREATE SEQUENCE reserve_seq START WITH 100 INCREMENT BY 1;
 
 
 
