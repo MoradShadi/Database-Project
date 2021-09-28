@@ -101,10 +101,52 @@ CREATE SEQUENCE reserve_seq START WITH 100 INCREMENT BY 1;
 
 -- 2 (b) (iii)
 
+INSERT INTO borrower VALUES (
+    borrower_seq.NEXTVAL,
+    'Ada',
+    'Lovelace',
+    'Old airport',
+    'Doha',
+    '209',
+    (
+        SELECT
+            branch_code
+        FROM
+            branch
+        WHERE
+            branch_contact_no = 0395413120
+    )
+);
 
+INSERT INTO reserve VALUES (
+    reserve_seq.NEXTVAL,
+        (
+        SELECT
+            branch_code
+        FROM
+            branch
+        WHERE
+            branch_contact_no = 0395413120
+    ),
+            (
+        SELECT
+            bc_id
+        FROM
+            (book_copy join branch on book_copy.branch_code = branch.branch_code)
+        WHERE
+            branch_contact_no = 0395413120 AND book_call_no = '005.74 C824C'),
+    TO_DATE('2021-09-14 15:30:00', 'YYYY-MM-DD HH24:MI:SS'),
+            (
+        SELECT
+            bor_no
+        FROM
+            borrower
+        WHERE
+            bor_fname = 'Ada' AND bor_lname = 'Lovelace'
+    )
+);
 
-
-
+commit;
 
 -- 2 (b) (iv)
 
