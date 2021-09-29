@@ -150,3 +150,45 @@ commit;
 
 -- 2 (b) (iv)
 
+INSERT INTO loan VALUES (
+            (
+        SELECT
+            branch_code
+        FROM
+            branch
+        WHERE
+            branch_contact_no = 0395413120
+    ),
+    (
+        SELECT
+            bc_id
+        FROM
+            (book_copy join branch on book_copy.branch_code = branch.branch_code)
+        WHERE
+            branch_contact_no = 0395413120 AND book_call_no = '005.74 C824C'),
+    (
+        SELECT
+            MIN(reserve_date_time_placed)
+        FROM
+            reserve
+        WHERE
+            bor_no = (SELECT bor_no FROM borrower WHERE bor_fname = 'Ada' AND bor_lname = 'Lovelace')) + 7 - 3/24,
+    (
+        SELECT
+            MIN(reserve_date_time_placed)
+        FROM
+            reserve
+        WHERE
+            bor_no = (SELECT bor_no FROM borrower WHERE bor_fname = 'Ada' AND bor_lname = 'Lovelace')) + 7 - 3/24 + 14,
+    NULL,
+    (
+        SELECT
+            bor_no
+        FROM
+            borrower
+        WHERE
+            bor_fname = 'Ada' AND bor_lname = 'Lovelace'
+    )
+);
+
+commit;
