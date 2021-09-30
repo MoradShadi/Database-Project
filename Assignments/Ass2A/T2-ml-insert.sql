@@ -21,6 +21,7 @@ INSERT INTO book_copy VALUES (
     'N',
     '005.74 D691D'
 );
+commit;
 
 INSERT INTO book_copy VALUES (
     10,
@@ -29,6 +30,7 @@ INSERT INTO book_copy VALUES (
     'N',
     '005.74 D691D'
 );
+commit;
 
 INSERT INTO book_copy VALUES (
     10,
@@ -37,6 +39,7 @@ INSERT INTO book_copy VALUES (
     'Y',
     '005.74 D691D'
 );
+commit;
 
 INSERT INTO book_copy VALUES (
     10,
@@ -45,6 +48,7 @@ INSERT INTO book_copy VALUES (
     'N',
     '005.432 L761P'
 );
+commit;
 
 INSERT INTO book_copy VALUES (
     11,
@@ -53,6 +57,7 @@ INSERT INTO book_copy VALUES (
     'N',
     '112.6 S874D'
 );
+commit;
 
 INSERT INTO book_copy VALUES (
     11,
@@ -61,6 +66,7 @@ INSERT INTO book_copy VALUES (
     'N',
     '005.432 L761P'
 );
+commit;
 
 INSERT INTO book_copy VALUES (
     11,
@@ -69,6 +75,7 @@ INSERT INTO book_copy VALUES (
     'Y',
     '005.432 L761P'
 );
+commit;
 
 INSERT INTO book_copy VALUES (
     13,
@@ -77,6 +84,7 @@ INSERT INTO book_copy VALUES (
     'N',
     '005.74 D691D'
 );
+commit;
 
 INSERT INTO book_copy VALUES (
     13,
@@ -85,6 +93,7 @@ INSERT INTO book_copy VALUES (
     'N',
     '823.914 H219A'
 );
+commit;
 
 INSERT INTO book_copy VALUES (
     13,
@@ -93,6 +102,7 @@ INSERT INTO book_copy VALUES (
     'N',
     '823.914 A211H'
 );
+commit;
 
 INSERT INTO book_copy VALUES (
     13,
@@ -101,6 +111,7 @@ INSERT INTO book_copy VALUES (
     'Y',
     '823.914 A211H'
 );
+commit;
 
 INSERT INTO book_copy VALUES (
     13,
@@ -109,6 +120,7 @@ INSERT INTO book_copy VALUES (
     'N',
     '112.6 S874D'
 );
+commit;
 
 INSERT INTO loan VALUES (
     10,
@@ -118,6 +130,7 @@ INSERT INTO loan VALUES (
     TO_DATE('2021-06-16', 'YYYY-MM-DD'),
     1
 );
+commit;
 
 INSERT INTO loan VALUES (
     10,
@@ -127,6 +140,7 @@ INSERT INTO loan VALUES (
     TO_DATE('2021-06-22', 'YYYY-MM-DD'),
     1
 );
+commit;
 
 INSERT INTO loan VALUES (
     10,
@@ -136,6 +150,7 @@ INSERT INTO loan VALUES (
     TO_DATE('2021-06-24', 'YYYY-MM-DD'),
     1
 );
+commit;
 
 INSERT INTO loan VALUES (
     11,
@@ -145,6 +160,7 @@ INSERT INTO loan VALUES (
     TO_DATE('2021-06-18', 'YYYY-MM-DD'),
     2
 );
+commit;
 
 INSERT INTO loan VALUES (
     11,
@@ -154,6 +170,7 @@ INSERT INTO loan VALUES (
     TO_DATE('2021-06-18', 'YYYY-MM-DD'),
     2
 );
+commit;
 
 INSERT INTO loan VALUES (
     11,
@@ -163,6 +180,7 @@ INSERT INTO loan VALUES (
     TO_DATE('2021-07-16', 'YYYY-MM-DD'),
     2
 );
+commit;
 
 INSERT INTO loan VALUES (
     11,
@@ -172,6 +190,7 @@ INSERT INTO loan VALUES (
     NULL,
     3
 );
+commit;
 
 INSERT INTO loan VALUES (
     13,
@@ -181,6 +200,7 @@ INSERT INTO loan VALUES (
     TO_DATE('2021-07-10', 'YYYY-MM-DD'),
     5
 );
+commit;
 
 INSERT INTO loan VALUES (
     13,
@@ -190,6 +210,7 @@ INSERT INTO loan VALUES (
     TO_DATE('2021-07-29', 'YYYY-MM-DD'),
     5
 );
+commit;
 
 INSERT INTO loan VALUES (
     13,
@@ -199,6 +220,7 @@ INSERT INTO loan VALUES (
     NULL,
     5
 );
+commit;
 
 INSERT INTO reserve VALUES (
     1,
@@ -207,6 +229,7 @@ INSERT INTO reserve VALUES (
     TO_DATE('2021-08-25 20:32:06', 'YYYY-MM-DD HH24:MI:SS'),
     3
 );
+commit;
 
 INSERT INTO reserve VALUES (
     2,
@@ -215,5 +238,4 @@ INSERT INTO reserve VALUES (
     TO_DATE('2021-08-30 06:12:46', 'YYYY-MM-DD HH24:MI:SS'),
     5
 );
-
 commit;
