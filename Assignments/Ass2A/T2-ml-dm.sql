@@ -21,6 +21,7 @@ INSERT INTO book_detail VALUES (
     to_date('2019','YYYY'),
     '13'
 );
+commit;
 
 INSERT INTO book_copy VALUES (
     (
@@ -42,6 +43,7 @@ INSERT INTO book_copy VALUES (
     'N',
     '005.74 C824C'
 );
+commit;
 
 INSERT INTO book_copy VALUES (
     (
@@ -63,6 +65,7 @@ INSERT INTO book_copy VALUES (
     'N',
     '005.74 C824C'
 );
+commit;
 
 INSERT INTO book_copy VALUES (
     (
@@ -84,7 +87,7 @@ INSERT INTO book_copy VALUES (
     'N',
     '005.74 C824C'
 );
-
+commit;
 
 
 -- 2 (b) (ii)
@@ -117,6 +120,7 @@ INSERT INTO borrower VALUES (
             branch_contact_no = 0395413120
     )
 );
+commit;
 
 INSERT INTO reserve VALUES (
     reserve_seq.NEXTVAL,
