@@ -43,7 +43,7 @@ commit;
 ALTER TABLE loan
 ADD returned_branch Number(2,0);
 
-COMMENT ON COLUMN book_copy.book_cond IS
+COMMENT ON COLUMN loan.returned_branch IS
     'Branch code of which book on loan is returned to.';
 commit;
 
