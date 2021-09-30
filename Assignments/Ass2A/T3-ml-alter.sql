@@ -40,10 +40,18 @@ where branch_code = (
 commit;
 
 -- 3 (b)
+ALTER TABLE loan
+ADD returned_branch Number(2,0);
 
+COMMENT ON COLUMN book_copy.book_cond IS
+    'Branch code of which book on loan is returned to.';
+commit;
 
+update loan
+set returned_branch = branch_code
+where loan_actual_return_date is Not NULL;
 
-
+commit;
 -- 3 (c)
 
 
