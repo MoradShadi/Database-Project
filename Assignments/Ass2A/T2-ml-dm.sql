@@ -192,3 +192,28 @@ INSERT INTO loan VALUES (
 );
 
 commit;
+
+DELETE FROM reserve
+where bor_no =     (
+        SELECT
+            bor_no
+        FROM
+            borrower
+        WHERE
+            bor_fname = 'Ada' AND bor_lname = 'Lovelace'
+    ) AND reserve_id =  (
+        SELECT
+            MIN(reserve_id)
+        FROM
+            reserve
+        WHERE
+            bor_no = (
+        SELECT
+            bor_no
+        FROM
+            borrower
+        WHERE
+            bor_fname = 'Ada' AND bor_lname = 'Lovelace'
+    )
+    );
+commit;
