@@ -54,5 +54,30 @@ where loan_actual_return_date is Not NULL;
 commit;
 -- 3 (c)
 
+DROP TABLE Branch_Management PURGE;
 
+CREATE TABLE Branch_Management (
+    branch_code         NUMBER(2) NOT NULL,
+    man_id              NUMBER(2) NOT NULL,
+    genre_managed       char(1) DEFAULT 'B' NOT NULL
+);
 
+COMMENT ON COLUMN Branch_Management.genre_managed IS
+    'Identifies which genre(s) a manager at a given branch handles -> (R)-reference, (F)- fiction, (B)-both reference and fiction ';
+    
+ALTER TABLE Branch_Management
+    ADD CONSTRAINT bm_genre_chk CHECK ( genre_managed IN ( 'R', 'F', 'B' ) );
+
+ALTER TABLE Branch_Management ADD CONSTRAINT Branch_Management_pk PRIMARY KEY ( branch_code, man_id );
+
+ALTER TABLE Branch_Management
+    ADD CONSTRAINT branch_Branch_Management FOREIGN KEY ( branch_code )
+        REFERENCES branch ( branch_code );
+        
+ALTER TABLE Branch_Management
+    ADD CONSTRAINT manager_Branch_Management FOREIGN KEY ( man_id )
+        REFERENCES manager ( man_id );
+        
+INSERT INTO Branch_Management (branch_code, man_id)
+Select branch_code, man_id
+from Branch
