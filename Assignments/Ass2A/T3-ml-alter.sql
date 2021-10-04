@@ -80,4 +80,10 @@ ALTER TABLE Branch_Management
         
 INSERT INTO Branch_Management (branch_code, man_id)
 Select branch_code, man_id
-from Branch
+from Branch;
+
+ALTER TABLE Branch
+DROP CONSTRAINT manager_branch;
+
+ALTER TABLE Branch
+DROP COLUMN man_id;
