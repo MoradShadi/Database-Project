@@ -77,10 +77,13 @@ ALTER TABLE Branch_Management
 ALTER TABLE Branch_Management
     ADD CONSTRAINT manager_Branch_Management FOREIGN KEY ( man_id )
         REFERENCES manager ( man_id );
-        
+commit;
+
 INSERT INTO Branch_Management (branch_code, man_id)
 Select branch_code, man_id
 from Branch;
+
+commit;
 
 ALTER TABLE Branch
 DROP CONSTRAINT manager_branch;
@@ -88,8 +91,14 @@ DROP CONSTRAINT manager_branch;
 ALTER TABLE Branch
 DROP COLUMN man_id;
 
+commit;
+
 UPDATE Branch_Management
 set genre_managed = 'R'
 where branch_code = (select branch_code from branch where branch_contact_no = '0395413120') AND man_id = 10;
 
+commit;
+
 Insert INTO Branch_Management values((select branch_code from branch where branch_contact_no = '0395413120'),12, 'F');
+
+commit;
