@@ -30,7 +30,10 @@ ORDER BY doctor_lname,doctor_fname;
 -- PLEASE PLACE REQUIRED SQL STATEMENT FOR THIS PART HERE
 -- ENSURE that your query is formatted and has a semicolon (;)
 -- at the end of this answer
-
+SELECT item_code, item_description, item_stock, cc_title
+FROM cgh.item I JOIN CGH.costcentre CC on I.cc_code = cc.cc_code
+WHERE item_stock > 50 AND lower(item_description) LIKE '%disposable%'
+ORDER BY item_code;
 
 /*
     Q3
