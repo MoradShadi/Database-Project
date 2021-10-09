@@ -1,9 +1,9 @@
 --****PLEASE ENTER YOUR DETAILS BELOW****
 --cgh_queries.sql
 
---Student ID:
---Student Name:
---Tutorial No:
+--Student ID: 29799260
+--Student Name: Morad Abou Shadi
+--Tutorial No: FIT3171 Tutorial 2
 
 /* Comments for your marker:
 
@@ -17,9 +17,12 @@
     Q1
 */
 -- PLEASE PLACE REQUIRED SQL STATEMENT FOR THIS PART HERE
--- ENSURE that your query is formatted and has a semicolon
+-- ENSURE that your query is formatted and has a semicolons
 -- (;) at the end of this answer
-
+SELECT doctor_title, doctor_fname, doctor_lname, doctor_phone
+FROM ((CGH.Doctor D JOIN CGH.Doctor_speciality DS ON D.doctor_id = DS.doctor_id) JOIN CGH.speciality S ON DS.spec_code = S.spec_code)
+WHERE Upper(spec_description) = 'ORTHOPEDIC SURGERY'
+ORDER BY doctor_lname,doctor_fname;
 
 /*
     Q2
