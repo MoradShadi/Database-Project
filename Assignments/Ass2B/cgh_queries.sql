@@ -41,8 +41,11 @@ ORDER BY item_code;
 -- PLEASE PLACE REQUIRED SQL STATEMENT FOR THIS PART HERE
 -- ENSURE that your query is formatted and has a semicolon (;)
 -- at the end of this answer
-
-
+SELECT A.patient_id, ltrim(patient_fname || ' ' || patient_lname) AS "Patient Name", to_char(adm_date_time,'dd-mm-yyyy hh24:mi:ss'), doctor_title || ' ' || ltrim(doctor_fname || ' ' || doctor_lname) AS "Doctor
+ Name"
+FROM ((CGH.admission A JOIN CGH.patient P ON P.patient_id = A.patient_id) JOIN CGH.doctor D ON A.doctor_id = D.doctor_id )
+WHERE adm_date_time BETWEEN to_date('11-09-2021 10:00:00','dd-mm-yyyy hh24:mi:ss') AND to_date('14-09-2021 18:00:00','dd-mm-yyyy hh24:mi:ss')
+ORDER BY adm_date_time;
 /*
     Q4
 */
