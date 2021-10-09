@@ -52,7 +52,10 @@ ORDER BY adm_date_time;
 -- PLEASE PLACE REQUIRED SQL STATEMENT FOR THIS PART HERE
 -- ENSURE that your query is formatted and has a semicolon (;)
 -- at the end of this answer
-
+SELECT proc_code, proc_name, proc_description, to_char(proc_std_cost, '$9999.99')
+FROM cgh.procedure
+WHERE proc_std_cost < (SELECT avg(proc_std_cost) FROM cgh.procedure)
+ORDER BY proc_std_cost DESC;
 
 /*
     Q5
