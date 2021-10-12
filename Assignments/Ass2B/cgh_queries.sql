@@ -76,6 +76,11 @@ ORDER BY count(A.patient_id) DESC, patient_dob;
 -- ENSURE that your query is formatted and has a semicolon (;)
 -- at the end of this answer
 
+SELECT adm_no, A.patient_id, patient_fname, patient_lname, trunc((adm_discharge - adm_date_time)) || ' days ' || to_char(mod((to_number(adm_discharge - adm_date_time))*24,24),'990.0')|| ' hours'
+FROM CGH.admission A JOIN CGH.patient P ON P.patient_id = A.patient_id
+WHERE adm_discharge is Not NULL AND (adm_discharge - adm_date_time) > (SELECT AVG(adm_discharge - adm_date_time) FROM CGH.admission)
+ORDER BY adm_no;
+
 
 /*
     Q7
