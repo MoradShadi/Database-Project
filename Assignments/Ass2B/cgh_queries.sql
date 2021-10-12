@@ -76,7 +76,7 @@ ORDER BY count(A.patient_id) DESC, patient_dob;
 -- ENSURE that your query is formatted and has a semicolon (;)
 -- at the end of this answer
 
-SELECT adm_no, A.patient_id, patient_fname, patient_lname, trunc((adm_discharge - adm_date_time)) || ' days ' || to_char(mod((to_number(adm_discharge - adm_date_time))*24,24),'990.0')|| ' hours'
+SELECT adm_no, A.patient_id, patient_fname, patient_lname, trunc((adm_discharge - adm_date_time)) || ' days' || to_char(mod((to_number(adm_discharge - adm_date_time))*24,24),'990.0')|| ' hours'
 FROM CGH.admission A JOIN CGH.patient P ON P.patient_id = A.patient_id
 WHERE adm_discharge is Not NULL AND (adm_discharge - adm_date_time) > (SELECT AVG(adm_discharge - adm_date_time) FROM CGH.admission)
 ORDER BY adm_no;
@@ -89,6 +89,10 @@ ORDER BY adm_no;
 -- ENSURE that your query is formatted and has a semicolon (;)
 -- at the end of this answer
 
+SELECT AP.proc_code, proc_name, proc_description, proc_time, proc_std_cost, AVG(adprc_pat_cost) - proc_std_cost As "Procedure Price Differential"
+FROM CGH.adm_prc AP JOIN CGH.procedure P on AP.proc_code = P.proc_code 
+group by AP.proc_code, proc_name, proc_description, proc_time, proc_std_cost
+ORDER BY proc_code;
 
 /*
     Q8
