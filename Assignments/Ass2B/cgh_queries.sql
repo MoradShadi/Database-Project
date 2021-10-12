@@ -63,7 +63,11 @@ ORDER BY proc_std_cost DESC;
 -- PLEASE PLACE REQUIRED SQL STATEMENT FOR THIS PART HERE
 -- ENSURE that your query is formatted and has a semicolon (;)
 -- at the end of this answer
-
+SELECT A.patient_id , patient_lname, patient_fname, patient_dob, count(A.patient_id) As "AdmissionCount"
+FROM CGH.admission A JOIN CGH.patient P ON P.patient_id = A.patient_id
+GROUP BY A.patient_id, patient_lname, patient_fname, patient_dob
+HAVING count(A.patient_id) > 2
+ORDER BY count(A.patient_id) DESC, patient_dob;
 
 /*
     Q6
