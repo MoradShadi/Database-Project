@@ -116,3 +116,5 @@ ORDER BY proc_name;
 SELECT adprc_no, proc_code, AP.adm_no, patient_id, to_char(adprc_date_time,'dd-mm-yyyy hh24:mi:ss') AS "adprc_date_time", adprc_pat_cost + adprc_items_cost As "Total Cost"
 From CGH.admission A JOIN CGH.adm_prc AP on A.adm_no = AP.adm_no
 ORDER BY adprc_no;
+
+--The ninth most expensive procedure(s) carried out on admission are adprc_no 1140 & 1040
