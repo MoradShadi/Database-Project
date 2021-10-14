@@ -101,6 +101,10 @@ ORDER BY proc_code;
 -- ENSURE that your query is formatted and has a semicolon (;)
 -- at the end of this answer
 
+SELECT P.proc_code, proc_name, NVL(IT.item_code,'---'), NVL(item_description,'---'), NVL(to_char(max(it.it_qty_used)),'---') AS "Maximum Quantity"
+FROM ((CGH.procedure P LEFT JOIN CGH.adm_prc AP on p.proc_code = ap.proc_code) LEFT JOIN CGH.item_treatment IT on IT.adprc_no = AP.adprc_no) LEFT JOIN CGH.item I on I.item_code = IT.item_code 
+group by P.proc_code, proc_name, NVL(IT.item_code,'---'), NVL(item_description,'---')
+ORDER BY proc_name;
 
 /*
     Q9a (FIT2094 only) or Q9b (FIT3171 only)
