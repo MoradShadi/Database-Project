@@ -113,3 +113,6 @@ ORDER BY proc_name;
 -- ENSURE that your query is formatted and has a semicolon (;)
 -- at the end of this answer
 
+SELECT adprc_no, proc_code, AP.adm_no, patient_id, to_char(adprc_date_time,'dd-mm-yyyy hh24:mi:ss'), adprc_pat_cost + adprc_items_cost As "Total Cost"
+From CGH.admission A JOIN CGH.adm_prc AP on A.adm_no = AP.adm_no
+ORDER BY adprc_no;
