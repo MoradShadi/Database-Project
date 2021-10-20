@@ -74,21 +74,20 @@ rollback;
 /*Please copy your trigger code with a slash(/) followed by an empty line after this line*/
 
 CREATE OR REPLACE TRIGGER discharge_check
-    AFTER UPDATE of adm_discharge on admission
+    BEFORE UPDATE of adm_discharge on admission
     FOR EACH ROW
 DECLARE
     last_proc_end DATE;
-    admin_cost number(7,2) DEFAULT 50;
-    pat_cost number(7,2) DEFAULT 0;
-    item_cost number(7,2) DEFAULT 0;
+    admin_cost admission.adm_total_cost%type DEFAULT 50;
+    pat_cost admission.adm_total_cost%type DEFAULT 0;
+    item_cost admission.adm_total_cost%type DEFAULT 0;
 BEGIN
     SELECT MAX(adprc_date_time) INTO last_proc_end FROM adm_prc WHERE adm_no = :new.adm_no;
-    SELECT SUM(adprc_pat_cost) INTO pat_cost FROM adm_prc WHERE adm_no = :new.adm_no;
-    SELECT SUM(adprc_items_cost) INTO item_cost FROM adm_prc WHERE adm_no = :new.adm_no;
+    SELECT NVL(SUM(adprc_pat_cost),0) INTO pat_cost FROM adm_prc WHERE adm_no = :new.adm_no;
+    SELECT NVL(SUM(adprc_items_cost),0) INTO item_cost FROM adm_prc WHERE adm_no = :new.adm_no;
     IF :new.adm_discharge < last_proc_end or :new.adm_discharge < :new.adm_date_time THEN
         raise_application_error(-20000, 'Discharge date/time not allowed!');
-    ELSE UPDATE admission SET adm_total_cost = (admin_cost + pat_cost + item_cost) WHERE adm_no = :old.adm_no;
-    
+    ELSE :new.adm_total_cost := (admin_cost + pat_cost + item_cost);
     END IF;
 END;
 /
@@ -98,8 +97,48 @@ END;
 /*Test Harness for Trigger2*/
 /*Please copy SQL statements for Test Harness after this line*/
 
+--display before values
 select* from admission;
 
+--testing trigger with discharge date before admission date; will not allow
 UPDATE admission
-set adm_discharge =  to_date('02-11-2021 15:35:00', 'dd-mm-yyyy HH24:mi:ss')
-WHERE adm_no = '100280'
+set adm_discharge =  to_date('02-07-2021 15:35:00', 'dd-mm-yyyy HH24:mi:ss')
+WHERE adm_no = '100280';
+
+--display after values, will be unchanged
+select* from admission;
+
+--inserting procedure to test date part of trigger
+INSERT INTO adm_prc values ('1030',to_date('02-11-2021 15:35:00', 'dd-mm-yyyy HH24:mi:ss'), 30, 0, '100280', '65554');
+--testing trigger with date after admission but before procedure, will not allow
+UPDATE admission
+set adm_discharge =  to_date('22-10-2021 15:35:00', 'dd-mm-yyyy HH24:mi:ss')
+WHERE adm_no = '100280';
+
+--display after values, will be unchanged
+select* from admission;
+
+--testing trigger with valid date, will allow and will update total cost
+UPDATE admission
+set adm_discharge =  to_date('22-11-2021 15:35:00', 'dd-mm-yyyy HH24:mi:ss')
+WHERE adm_no = '100280';
+
+--display after values, will be updated
+select* from admission;
+
+--inserting admission without prcedures
+INSERT INTO admission values ('100300',to_date('02-11-2021 15:35:00', 'dd-mm-yyyy HH24:mi:ss'), null, null);
+
+--display after values, will be updated
+select* from admission;
+
+--update discharge date without any procedures carried out, total cost will be admin cost only ($50)
+UPDATE admission
+set adm_discharge =  to_date('5-11-2021 15:35:00', 'dd-mm-yyyy HH24:mi:ss')
+WHERE adm_no = '100300';
+
+--display after values, will be updated
+select* from admission;
+
+--End transaction
+rollback;
