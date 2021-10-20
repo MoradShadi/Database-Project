@@ -119,9 +119,10 @@ select* from admission;
 
 --inserting procedure to test date part of trigger
 INSERT INTO adm_prc values ('1030',to_date('02-11-2021 15:35:00', 'dd-mm-yyyy HH24:mi:ss'), 30, 11, '100280', '65554');
---testing trigger with date after admission but before procedure, will not allow
+INSERT INTO adm_prc values ('1040',to_date('02-12-2021 15:35:00', 'dd-mm-yyyy HH24:mi:ss'), 35, 12, '100280', '65554');
+--testing trigger with date after admission but before last procedure, will not allow
 UPDATE admission
-set adm_discharge =  to_date('22-10-2021 15:35:00', 'dd-mm-yyyy HH24:mi:ss')
+set adm_discharge =  to_date('22-11-2021 15:35:00', 'dd-mm-yyyy HH24:mi:ss')
 WHERE adm_no = '100280';
 
 --display after values, will be unchanged
@@ -129,7 +130,7 @@ select* from admission;
 
 --testing trigger with valid date, will allow and will update total cost
 UPDATE admission
-set adm_discharge =  to_date('22-11-2021 15:35:00', 'dd-mm-yyyy HH24:mi:ss')
+set adm_discharge =  to_date('22-12-2021 15:35:00', 'dd-mm-yyyy HH24:mi:ss')
 WHERE adm_no = '100280';
 
 --display after values, will be updated
