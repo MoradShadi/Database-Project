@@ -89,7 +89,7 @@ ORDER BY adm_no;
 -- ENSURE that your query is formatted and has a semicolon (;)
 -- at the end of this answer
 
-SELECT AP.proc_code, proc_name, proc_description, proc_time, proc_std_cost, AVG(adprc_pat_cost) - proc_std_cost As "Procedure Price Differential"
+SELECT AP.proc_code, proc_name, proc_description, proc_time, proc_std_cost,to_char(AVG(adprc_pat_cost) - proc_std_cost, '9999.99')  As "Procedure Price Differential"
 FROM CGH.adm_prc AP JOIN CGH.procedure P on AP.proc_code = P.proc_code 
 group by AP.proc_code, proc_name, proc_description, proc_time, proc_std_cost
 ORDER BY proc_code;
